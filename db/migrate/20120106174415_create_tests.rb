@@ -5,7 +5,7 @@ class CreateTests < ActiveRecord::Migration
       t.text :description
       t.datetime :start_time
       t.datetime :end_time
-      t.boolean :time_submitted
+      t.datetime :time_submitted
 
       t.timestamps
     end
