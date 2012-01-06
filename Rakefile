@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-FillerName::Application.load_tasks
+UWCATestingSystem::Application.load_tasks

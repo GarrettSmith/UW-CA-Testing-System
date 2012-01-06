@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-FillerName::Application.config.secret_token = '539f03c028e87c93f5fee725b8b169867c95cae7ed84abaa27910bb6a8cfe8a5600eb6629344d3ad1c51c0db77d0dd4faa7e51b8361ea88e6c1fce7d7345d95a'
+UWCATestingSystem::Application.config.secret_token = '58203bb80c3bc9704ca6f3addac16ba931451621db297106e7ac081bbe5ad1bc5318da6fa3af9158d7eb478f84a6cf0235613267bb3e5d6b13b1d3928f1b7b8c'
