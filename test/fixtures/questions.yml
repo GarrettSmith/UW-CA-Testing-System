@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  possible_marks: 
+  question_text: MyString
+  bonus: false
+  name: MyString
+
+two:
+  possible_marks: 
+  question_text: MyString
+  bonus: false
+  name: MyString

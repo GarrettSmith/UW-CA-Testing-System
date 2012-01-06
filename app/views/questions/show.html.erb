@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Possible marks:</b>
+  <%= @question.possible_marks %>
+</p>
+
+<p>
+  <b>Question text:</b>
+  <%= @question.question_text %>
+</p>
+
+<p>
+  <b>Bonus:</b>
+  <%= @question.bonus %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @question.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

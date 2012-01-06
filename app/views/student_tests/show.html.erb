@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Time started:</b>
+  <%= @student_test.time_started %>
+</p>
+
+<p>
+  <b>Time submitted:</b>
+  <%= @student_test.time_submitted %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_test_path(@student_test) %> |
+<%= link_to 'Back', student_tests_path %>

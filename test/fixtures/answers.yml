@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  earned_marks: 1.5
+  time_taken: 2012-01-06 11:55:45
+  time_submitted: 2012-01-06 11:55:45
+
+two:
+  earned_marks: 1.5
+  time_taken: 2012-01-06 11:55:45
+  time_submitted: 2012-01-06 11:55:45

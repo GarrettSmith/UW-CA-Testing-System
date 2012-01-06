@@ -1,0 +1,21 @@
+<h1>Listing enrolled_students</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @enrolled_students.each do |enrolled_student| %>
+  <tr>
+    <td><%= link_to 'Show', enrolled_student %></td>
+    <td><%= link_to 'Edit', edit_enrolled_student_path(enrolled_student) %></td>
+    <td><%= link_to 'Destroy', enrolled_student, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Enrolled student', new_enrolled_student_path %>

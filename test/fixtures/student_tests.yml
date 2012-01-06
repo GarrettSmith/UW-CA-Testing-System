@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  time_started: 1.5
+  time_submitted: 1.5
+
+two:
+  time_started: 1.5
+  time_submitted: 1.5

@@ -10,3 +10,57 @@ Served asset /rails.png - 200 OK (0ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2012-01-06 09:29:26 -0600
 Served asset /rails.png - 304 Not Modified (2ms)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (253.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (187.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120106173556)
+  [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar(255), "email" varchar(255), "first_name" varchar(255), "last_name" varchar(255), "admin" boolean, "recieve_email" boolean, "password" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120106173556')[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120106173556)
+Migrating to CreateCourses (20120106173800)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "number" varchar(255), "department" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106173800')
+Migrating to CreateSemesters (20120106174005)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120106173556)
+Migrating to CreateCourses (20120106173800)
+Migrating to CreateSemesters (20120106174005)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "semesters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "start_date" date, "end_date" date, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106174005')
+Migrating to CreateSections (20120106174048)
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "sections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" integer, "room_number" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106174048')
+Migrating to CreateEnrolledStudents (20120106174308)
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "enrolled_students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106174308')
+Migrating to CreateTests (20120106174415)
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "tests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "start_time" datetime, "end_time" datetime, "time_submitted" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106174415')
+Migrating to CreateStudentTests (20120106174710)
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "student_tests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_started" datetime, "time_submitted" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106174710')
+Migrating to CreateQuestions (20120106175111)
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "possible_marks" float, "text" text, "bonus" boolean, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106175111')
+Migrating to CreateAnswers (20120106175545)
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "earned_marks" float, "time_taken" float, "time_submitted" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120106175545')
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("enrolled_students")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sections")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("semesters")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("student_tests")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("tests")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m

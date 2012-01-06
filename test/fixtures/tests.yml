@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  start_time: 1.5
+  end_time: 1.5
+  marks_submitted: false
+
+two:
+  name: MyString
+  description: MyString
+  start_time: 1.5
+  end_time: 1.5
+  marks_submitted: false

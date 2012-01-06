@@ -1,4 +1,22 @@
 UWCATestingSystem::Application.routes.draw do
+  resources :answers
+
+  resources :questions
+
+  resources :student_tests
+
+  resources :tests
+
+  resources :enrolled_students
+
+  resources :sections
+
+  resources :semesters
+
+  resources :courses
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

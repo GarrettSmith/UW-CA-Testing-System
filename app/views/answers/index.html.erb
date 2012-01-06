@@ -1,0 +1,27 @@
+<h1>Listing answers</h1>
+
+<table>
+  <tr>
+    <th>Earned marks</th>
+    <th>Time taken</th>
+    <th>Time submitted</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @answers.each do |answer| %>
+  <tr>
+    <td><%= answer.earned_marks %></td>
+    <td><%= answer.time_taken %></td>
+    <td><%= answer.time_submitted %></td>
+    <td><%= link_to 'Show', answer %></td>
+    <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
+    <td><%= link_to 'Destroy', answer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Answer', new_answer_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Earned marks:</b>
+  <%= @answer.earned_marks %>
+</p>
+
+<p>
+  <b>Time taken:</b>
+  <%= @answer.time_taken %>
+</p>
+
+<p>
+  <b>Time submitted:</b>
+  <%= @answer.time_submitted %>
+</p>
+
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>
