@@ -1,11 +1,11 @@
 UWCATestingSystem::Application.routes.draw do
+  resources :section_tests
+
   resources :answers
 
   resources :questions
 
   resources :student_tests
-
-  resources :tests
 
   resources :enrolled_students
 

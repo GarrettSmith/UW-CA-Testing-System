@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120106175545) do
+ActiveRecord::Schema.define(:version => 20120109201919) do
 
   create_table "answers", :force => true do |t|
     t.float    "earned_marks"
@@ -39,6 +39,16 @@ ActiveRecord::Schema.define(:version => 20120106175545) do
     t.text     "text"
     t.boolean  "bonus"
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "section_tests", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "time_submitted"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
