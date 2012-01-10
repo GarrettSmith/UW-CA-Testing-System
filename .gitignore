@@ -14,6 +14,9 @@
 /log/*.log
 /tmp
 
-# ignore editor and tmp files
+# Ignore documentation
+/doc
+
+# Ignore editor and tmp files
 *.swp
 *~
