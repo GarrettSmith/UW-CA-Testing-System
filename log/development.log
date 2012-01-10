@@ -177,3 +177,256 @@ Migrating to CreateSectionTests (20120109201919)
   [1m[35m (0.0ms)[0m  PRAGMA index_list("student_tests")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tests")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-01-10 10:03:48 -0600
+Served asset /rails.png - 304 Not Modified (20ms)
+
+
+Started GET "/sections" for 127.0.0.1 at 2012-01-10 10:03:52 -0600
+  Processing by SectionsController#index as HTML
+  [1m[36mSection Load (0.1ms)[0m  [1mSELECT "sections".* FROM "sections" [0m
+Rendered sections/index.html.erb within layouts/application (27.0ms)
+Compiled application.css  (10ms)  (pid 10887)
+Compiled answers.css  (21ms)  (pid 10887)
+Compiled courses.css  (0ms)  (pid 10887)
+Compiled enrolled_students.css  (0ms)  (pid 10887)
+Compiled questions.css  (0ms)  (pid 10887)
+Compiled scaffolds.css  (6ms)  (pid 10887)
+Compiled section_tests.css  (0ms)  (pid 10887)
+Compiled sections.css  (0ms)  (pid 10887)
+Compiled semesters.css  (0ms)  (pid 10887)
+Compiled student_tests.css  (0ms)  (pid 10887)
+Compiled users.css  (1ms)  (pid 10887)
+Compiled application.js  (13ms)  (pid 10887)
+Compiled jquery.js  (1ms)  (pid 10887)
+Compiled jquery_ujs.js  (0ms)  (pid 10887)
+Compiled answers.js  (400ms)  (pid 10887)
+Compiled courses.js  (83ms)  (pid 10887)
+Compiled enrolled_students.js  (82ms)  (pid 10887)
+Compiled questions.js  (82ms)  (pid 10887)
+Compiled section_tests.js  (81ms)  (pid 10887)
+Compiled sections.js  (105ms)  (pid 10887)
+Compiled semesters.js  (80ms)  (pid 10887)
+Compiled student_tests.js  (81ms)  (pid 10887)
+Compiled users.js  (79ms)  (pid 10887)
+Completed 200 OK in 1589ms (Views: 1587.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/studen" for 127.0.0.1 at 2012-01-10 10:03:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/studen"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-01-10 10:03:54 -0600
+
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /answers.css - 200 OK (1ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /courses.css - 200 OK (3ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /questions.css - 200 OK (1ms)
+
+
+Started GET "/assets/enrolled_students.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /enrolled_students.css - 200 OK (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /semesters.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /users.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/student_tests.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /student_tests.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /sections.css - 200 OK (2ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /answers.js - 200 OK (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /courses.js - 200 OK (1ms)
+
+
+Started GET "/assets/enrolled_students.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /enrolled_students.js - 200 OK (1ms)
+
+
+Started GET "/assets/section_tests.css?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /section_tests.css - 200 OK (1ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /questions.js - 200 OK (1ms)
+
+
+Started GET "/assets/section_tests.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /section_tests.js - 200 OK (1ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /sections.js - 200 OK (1ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /semesters.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/student_tests.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /student_tests.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 10:03:58 -0600
+Served asset /application.js - 200 OK (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120106173556)
+Migrating to CreateCourses (20120106173800)
+Migrating to CreateSemesters (20120106174005)
+Migrating to CreateSections (20120106174048)
+Migrating to CreateEnrolledStudents (20120106174308)
+Migrating to CreateStudentTests (20120106174710)
+Migrating to CreateQuestions (20120106175111)
+Migrating to CreateAnswers (20120106175545)
+Migrating to CreateSectionTests (20120109201919)
+Migrating to AddAssociationIdsToSection (20120110154747)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "sections" ADD "professor_id" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "sections" ADD "course_id" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "sections" ADD "semester_id" integer[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120110154747')
+Migrating to AddAssociationsToAnswer (20120110155013)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "answers" ADD "student_test_id" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "answers" ADD "question_id" integer
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120110155013')[0m
+Migrating to AddAssociationsToEnrolledStudent (20120110155104)
+  [1m[35m (0.2ms)[0m  ALTER TABLE "enrolled_students" ADD "student_id" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "enrolled_students" ADD "section_id" integer[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120110155104')
+Migrating to AddAssociationsToQuestion (20120110155139)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "questions" ADD "test_id" integer[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120110155139')
+Migrating to AddAssociationsToSectionTest (20120110155215)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "section_tests" ADD "section_id" integer[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120110155215')
+Migrating to AddAssociationsToStudentTest (20120110155305)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "student_tests" ADD "enrolled_student_id" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "student_tests" ADD "test_id" integer
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120110155305')[0m
+Migrating to AddTypeToUsers (20120110160843)
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "type" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120110160843')[0m
+Migrating to AddProfAttributesToUsers (20120110161853)
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "office_number" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "office_hours" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120110161853')
+Migrating to AddStudentAttributesToUsers (20120110161932)
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "student_number" integer[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120110161932')
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("enrolled_students")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("section_tests")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sections")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("semesters")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("student_tests")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("tests")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-10 10:24:49 -0600
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (100.1ms)
+Completed 500 Internal Server Error in 108ms
+
+ActionView::Template::Error (undefined method `student_path' for #<#<Class:0x000000044b7310>:0x0000000449ebf8>):
+    23:     <td><%= user.admin %></td>
+    24:     <td><%= user.recieve_email %></td>
+    25:     <td><%= user.password %></td>
+    26:     <td><%= link_to 'Show', user %></td>
+    27:     <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    28:     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+    29:   </tr>
+  app/views/users/index.html.erb:26:in `block in _app_views_users_index_html_erb__4145191969549291175_34070160'
+  app/views/users/index.html.erb:17:in `each'
+  app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__4145191969549291175_34070160'
+  app/controllers/users_controller.rb:7:in `index'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (22.3ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-10 10:24:51 -0600
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (88.5ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (undefined method `student_path' for #<#<Class:0x000000042146a8>:0x00000004210350>):
+    23:     <td><%= user.admin %></td>
+    24:     <td><%= user.recieve_email %></td>
+    25:     <td><%= user.password %></td>
+    26:     <td><%= link_to 'Show', user %></td>
+    27:     <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    28:     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+    29:   </tr>
+  app/views/users/index.html.erb:26:in `block in _app_views_users_index_html_erb__4145191969549291175_34070160'
+  app/views/users/index.html.erb:17:in `each'
+  app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb__4145191969549291175_34070160'
+  app/controllers/users_controller.rb:7:in `index'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.4ms)
