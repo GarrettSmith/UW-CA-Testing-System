@@ -430,3 +430,737 @@ ActionView::Template::Error (undefined method `student_path' for #<#<Class:0x000
 Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
 Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
 Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-01-10 12:34:43 -0600
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/q" for 127.0.0.1 at 2012-01-10 12:34:51 -0600
+
+ActionController::RoutingError (No route matches [GET] "/q"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2012-01-10 12:34:52 -0600
+
+ArgumentError (Unknown validator: 'GreaterThanOrEqualToValidator'):
+  app/models/question.rb:13:in `<class:Question>'
+  app/models/question.rb:2:in `<top (required)>'
+  app/controllers/questions_controller.rb:1:in `<top (required)>'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.3ms)
+
+
+Started GET "/a" for 127.0.0.1 at 2012-01-10 12:35:00 -0600
+
+ActionController::RoutingError (No route matches [GET] "/a"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/ans" for 127.0.0.1 at 2012-01-10 12:35:01 -0600
+
+ActionController::RoutingError (No route matches [GET] "/ans"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/answ" for 127.0.0.1 at 2012-01-10 12:35:01 -0600
+
+ActionController::RoutingError (No route matches [GET] "/answ"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/answre" for 127.0.0.1 at 2012-01-10 12:35:01 -0600
+
+ActionController::RoutingError (No route matches [GET] "/answre"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/answ" for 127.0.0.1 at 2012-01-10 12:35:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/answ"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/ans" for 127.0.0.1 at 2012-01-10 12:35:02 -0600
+
+ActionController::RoutingError (No route matches [GET] "/ans"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/answers/new" for 127.0.0.1 at 2012-01-10 12:35:07 -0600
+  Processing by AnswersController#new as HTML
+Rendered answers/_form.html.erb (12.0ms)
+Rendered answers/new.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/answers/" for 127.0.0.1 at 2012-01-10 12:35:07 -0600
+  Processing by AnswersController#index as HTML
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+Rendered answers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/answers/" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+  Processing by AnswersController#index as HTML
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" [0m
+Rendered answers/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /answers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /sections.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /semesters.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /courses.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /questions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/section_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /section_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /student_tests.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/enrolled_students.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /enrolled_students.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /enrolled_students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /section_tests.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /questions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /sections.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /student_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /semesters.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-10 12:35:45 -0600
+Served asset /users.js - 304 Not Modified (37ms)
+
+
+Started GET "/q/" for 127.0.0.1 at 2012-01-10 12:35:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/q"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2012-01-10 12:35:50 -0600
+
+ArgumentError (Unknown validator: 'GreaterThanOrEqualToValidator'):
+  app/models/question.rb:13:in `<class:Question>'
+  app/models/question.rb:2:in `<top (required)>'
+  app/controllers/questions_controller.rb:1:in `<top (required)>'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.4ms)
+
+
+Started GET "/answers/new" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+  Processing by AnswersController#new as HTML
+Rendered answers/_form.html.erb (11.5ms)
+Rendered answers/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /answers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /enrolled_students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /section_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /sections.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /student_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /student_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /enrolled_students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /section_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-10 12:36:01 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-01-10 12:36:35 -0600
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (106.3ms)
+Completed 500 Internal Server Error in 114ms
+
+ActionView::Template::Error (undefined method `student_path' for #<#<Class:0x00000005151fa8>:0x00000005141428>):
+    23:     <td><%= user.admin %></td>
+    24:     <td><%= user.recieve_email %></td>
+    25:     <td><%= user.password %></td>
+    26:     <td><%= link_to 'Show', user %></td>
+    27:     <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    28:     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+    29:   </tr>
+  app/views/users/index.html.erb:26:in `block in _app_views_users_index_html_erb___2492095730929970970_42598600'
+  app/views/users/index.html.erb:17:in `each'
+  app/views/users/index.html.erb:17:in `_app_views_users_index_html_erb___2492095730929970970_42598600'
+  app/controllers/users_controller.rb:7:in `index'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/section_tests" for 127.0.0.1 at 2012-01-10 12:36:39 -0600
+
+SyntaxError (/home/garrett/dev/UW-CA-Testing-System/app/models/section_test.rb:14: syntax error, unexpected tSYMBEG
+  validates :start_time. :presence => true
+                          ^
+/home/garrett/dev/UW-CA-Testing-System/app/models/section_test.rb:15: syntax error, unexpected tSYMBEG
+  validates :end__time. :presence => true
+                         ^):
+  app/controllers/section_tests_controller.rb:1:in `<top (required)>'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.4ms)
+
+
+Started GET "/stu" for 127.0.0.1 at 2012-01-10 12:36:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stu"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/stue" for 127.0.0.1 at 2012-01-10 12:36:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stue"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/stu" for 127.0.0.1 at 2012-01-10 12:36:40 -0600
+
+ActionController::RoutingError (No route matches [GET] "/stu"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-01-10 12:36:40 -0600
+
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/section_tests" for 127.0.0.1 at 2012-01-10 12:36:46 -0600
+
+SyntaxError (/home/garrett/dev/UW-CA-Testing-System/app/models/section_test.rb:14: syntax error, unexpected tSYMBEG
+  validates :start_time. :presence => true
+                          ^
+/home/garrett/dev/UW-CA-Testing-System/app/models/section_test.rb:15: syntax error, unexpected tSYMBEG
+  validates :end__time. :presence => true
+                         ^):
+  app/controllers/section_tests_controller.rb:1:in `<top (required)>'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.3ms)
+
+
+Started GET "/section_tets" for 127.0.0.1 at 2012-01-10 12:36:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/section_tets"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/section_tet" for 127.0.0.1 at 2012-01-10 12:36:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/section_tet"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/section_te" for 127.0.0.1 at 2012-01-10 12:36:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/section_te"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/section_tests" for 127.0.0.1 at 2012-01-10 12:36:49 -0600
+
+SyntaxError (/home/garrett/dev/UW-CA-Testing-System/app/models/section_test.rb:14: syntax error, unexpected tSYMBEG
+  validates :start_time. :presence => true
+                          ^
+/home/garrett/dev/UW-CA-Testing-System/app/models/section_test.rb:15: syntax error, unexpected tSYMBEG
+  validates :end__time. :presence => true
+                         ^):
+  app/controllers/section_tests_controller.rb:1:in `<top (required)>'
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.4ms)
+
+
+Started GET "/s_tests" for 127.0.0.1 at 2012-01-10 12:37:08 -0600
+
+ActionController::RoutingError (No route matches [GET] "/s_tests"):
+  
+
+Rendered /home/garrett/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/student_tests" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+  Processing by StudentTestsController#index as HTML
+  [1m[36mStudentTest Load (0.1ms)[0m  [1mSELECT "student_tests".* FROM "student_tests" [0m
+Rendered student_tests/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /answers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /sections.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /section_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /enrolled_students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /student_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /enrolled_students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /student_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /section_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:09 -0600
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/student_tests/new" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+  Processing by StudentTestsController#new as HTML
+Rendered student_tests/_form.html.erb (11.3ms)
+Rendered student_tests/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /answers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /enrolled_students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /sections.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /section_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /student_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /enrolled_students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /section_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /student_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:11 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/student_tests" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+  Processing by StudentTestsController#index as HTML
+  [1m[35mStudentTest Load (0.1ms)[0m  SELECT "student_tests".* FROM "student_tests" 
+Rendered student_tests/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /courses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /enrolled_students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /section_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /answers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /sections.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /semesters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.css?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /student_tests.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/enrolled_students.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /enrolled_students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /courses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/answers.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /answers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/section_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /section_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/semesters.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /semesters.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_tests.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /student_tests.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-01-10 12:37:29 -0600
+Served asset /application.js - 304 Not Modified (0ms)
