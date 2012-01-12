@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120111164848) do
+ActiveRecord::Schema.define(:version => 20120112020152) do
 
   create_table "answers", :force => true do |t|
     t.float    "earned_marks"
@@ -22,12 +22,19 @@ ActiveRecord::Schema.define(:version => 20120111164848) do
     t.integer  "student_test_id"
     t.integer  "question_id"
     t.string   "type"
+    t.text     "text"
   end
 
   create_table "courses", :force => true do |t|
     t.string   "name"
     t.string   "number"
     t.string   "department"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "doctypes", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -39,12 +46,11 @@ ActiveRecord::Schema.define(:version => 20120111164848) do
     t.integer  "section_id"
   end
 
-  create_table "long_answer_answers", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "long_answer_questions", :force => true do |t|
+  create_table "multiple_choice_options", :force => true do |t|
+    t.integer  "option_id"
+    t.string   "option_type"
+    t.boolean  "solution"
+    t.string   "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -98,6 +104,16 @@ ActiveRecord::Schema.define(:version => 20120111164848) do
     t.datetime "updated_at"
     t.integer  "enrolled_student_id"
     t.integer  "section_test_id"
+  end
+
+  create_table "test_files", :force => true do |t|
+    t.string   "type"
+    t.boolean  "modifiable"
+    t.boolean  "executable"
+    t.boolean  "highlight_syntax"
+    t.string   "path"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
