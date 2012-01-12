@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120110161932) do
+ActiveRecord::Schema.define(:version => 20120111164848) do
 
   create_table "answers", :force => true do |t|
     t.float    "earned_marks"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20120110161932) do
     t.datetime "updated_at"
     t.integer  "student_test_id"
     t.integer  "question_id"
+    t.string   "type"
   end
 
   create_table "courses", :force => true do |t|
@@ -38,14 +39,27 @@ ActiveRecord::Schema.define(:version => 20120110161932) do
     t.integer  "section_id"
   end
 
+  create_table "long_answer_answers", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "long_answer_questions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "questions", :force => true do |t|
     t.float    "possible_marks"
     t.text     "text"
     t.boolean  "bonus"
     t.string   "name"
+    t.integer  "answerable_id"
+    t.string   "answerable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "test_id"
+    t.string   "type"
   end
 
   create_table "section_tests", :force => true do |t|
@@ -83,17 +97,7 @@ ActiveRecord::Schema.define(:version => 20120110161932) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "enrolled_student_id"
-    t.integer  "test_id"
-  end
-
-  create_table "tests", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.boolean  "time_submitted"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "section_test_id"
   end
 
   create_table "users", :force => true do |t|

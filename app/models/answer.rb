@@ -1,6 +1,5 @@
 # An abstract answer to a question.
 class Answer < ActiveRecord::Base
-  belongs_to :question
   belongs_to :student_test
 
   attr_accessible :earned_marks, :time_submitted, :time_taken

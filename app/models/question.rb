@@ -3,16 +3,17 @@ class Question < ActiveRecord::Base
 
   include MathHelper
 
-  has_many :answers
-  belongs_to :test
+  #has_many :answers
+  belongs_to :section_test
 
   attr_accessor :name, :text, :bonus, :possible_marks
 
   #validates :name, :presence => true
   validates :text, :presence => true
-  validates :possible_marks,  :numericality => true,
-                              :greater_than_or_equal_to => 0
+  validates :possible_marks, :presence => true
   validates :bonus, :inclusion => { :in => [true, false] }
+  validates_numericality_of :possible_marks,
+                            :greater_than_or_equal_to => 0
 
   # The average mark earned by all answers to this question.
   def average_mark
