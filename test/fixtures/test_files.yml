@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  modifiable: false
+  executable: false
+  highlight_syntax: false
+  path: MyString
+
+two:
+  type: 
+  modifiable: false
+  executable: false
+  highlight_syntax: false
+  path: MyString
