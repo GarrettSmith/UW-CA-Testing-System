@@ -46,6 +46,16 @@ ActiveRecord::Schema.define(:version => 20120112020152) do
     t.integer  "section_id"
   end
 
+  create_table "long_answer_answers", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "long_answer_questions", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "multiple_choice_options", :force => true do |t|
     t.integer  "option_id"
     t.string   "option_type"
