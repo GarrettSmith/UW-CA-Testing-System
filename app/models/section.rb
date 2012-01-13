@@ -3,6 +3,7 @@ class Section < ActiveRecord::Base
   
   include MathHelper
 
+  has_many :enrolled_students
   has_many :students, :through => :enrolled_students
   belongs_to :proffessor
   belongs_to :course
@@ -22,4 +23,4 @@ class Section < ActiveRecord::Base
     marks = enrolled_students.map{ |x| x.average_percentage }
     median(marks)
   end
-end
+end 
