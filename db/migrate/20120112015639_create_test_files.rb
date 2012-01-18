@@ -5,7 +5,7 @@ class CreateTestFiles < ActiveRecord::Migration
       t.boolean :modifiable
       t.boolean :executable
       t.boolean :highlight_syntax
-      t.string :path
+      t.string :name
 
       t.timestamps
     end

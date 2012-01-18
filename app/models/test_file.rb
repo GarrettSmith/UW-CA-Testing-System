@@ -1,14 +1,18 @@
+# A represntation of a file in the database associated with a file
+# in the filesystem.
 class TestFile < ActiveRecord::Base
   belongs_to :doctype
 
-  attr_accessor :content
-  attr_accessible :path, :exectuable, :modifiable, :highlight_syntax
+  attr_accessor :content, :name
+  attr_accessible :name, :exectuable, :modifiable, :highlight_syntax
 
+  after_find :store_original_values
   before_save :save
 
-  # The name of the file including extensions
-  def name
-    File.basename(self.path)
+  # The extension of this file.
+  # This is gotten from the doctype.
+  def extension
+    self.doctype.extension
   end
 
   # Return the content of the file.
@@ -18,14 +22,20 @@ class TestFile < ActiveRecord::Base
 
   # Moves the file if its path has changed and saves the content.
   def save
-    File.rename(
+    #File.rename(
     save_content
   end
 
   private 
+    # stores the original values of name and path to compare and 
+    # on save and check if the file needs to be renamed.
+    def store_original_values
+      @original_name = @name
+      @original_path = path
+    end
 
     def full_path
-      Rails.root.join(self.path)
+      Rails.root.join(self.path, name, extension)
     end
     
     # Returns the content of the file if it exists.
