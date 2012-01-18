@@ -2,6 +2,7 @@
 class SectionTest < ActiveRecord::Base
 
   include MathHelper
+  include TimeInfo
 
   has_many :questions
   has_many :student_tests
@@ -49,23 +50,6 @@ class SectionTest < ActiveRecord::Base
   def median_time_taken
     times = student_tests.map{ |x| x.time_taken }
     median(times)
-  end
-
-  # A test is active if the current time is between the start and end 
-  # time.
-  def active?
-    now = Time.now
-    @start_time < now && now < @end_time
-  end
-
-  # A test is upcoming if the current time is before the start time.
-  def upcoming?
-    Time.now < @start_time
-  end
-
-  # A test is past when the current time is after the end time.
-  def past?
-    @end_time < Time.now
   end
 
   # A test is submitted and it's marks are made available if the time 

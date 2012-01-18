@@ -5,6 +5,7 @@ class Section < ActiveRecord::Base
 
   has_many :enrolled_students
   has_many :students, :through => :enrolled_students
+  has_many :section_tests
   belongs_to :proffessor
   belongs_to :course
   belongs_to :semester

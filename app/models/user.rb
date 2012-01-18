@@ -10,6 +10,10 @@ class User < ActiveRecord::Base
 
   validates :last_name, :presence => true
   validates :first_name, :presence => true
+  #
+  # an email regex stolen from 
+  # http://ruby.railstutorial.org/chapters/modeling-and-viewing-users-one#code:validates_format_of_email
+  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :email, :presence => true,
                     :confirmation => true,
@@ -23,10 +27,6 @@ class User < ActiveRecord::Base
   after_initialize :default_values
 
   private 
-    
-    # an email regex stolen from 
-    # http://ruby.railstutorial.org/chapters/modeling-and-viewing-users-one#code:validates_format_of_email
-    email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
     def default_values
       self.admin = false if self.admin.nil?
