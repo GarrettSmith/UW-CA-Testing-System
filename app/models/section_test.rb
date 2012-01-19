@@ -58,4 +58,9 @@ class SectionTest < ActiveRecord::Base
     not @time_submitted.nil?
   end
 
+  # Returns true if all student tests have been marked.
+  def marked?
+    not student_tests.map{ |x| x.marked? }.include?(false)
+  end
+
 end

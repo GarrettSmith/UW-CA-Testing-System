@@ -43,4 +43,9 @@ class Question < ActiveRecord::Base
     times = answers.map{ |x| x.time_taken }
     median(times)
   end
+
+  # Returns true if all answers to this question are marked.
+  def marked?
+    not answers.map{ |x| x.marked? }.include?(false)
+  end
 end
