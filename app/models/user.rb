@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_one :student
+  has_one :professor
+
   attr_accessor :email_confirmation, :password_confirmation
 
   attr_accessible :user_name, :first_name, :last_name, :email
@@ -10,7 +13,7 @@ class User < ActiveRecord::Base
 
   validates :last_name, :presence => true
   validates :first_name, :presence => true
-  #
+
   # an email regex stolen from 
   # http://ruby.railstutorial.org/chapters/modeling-and-viewing-users-one#code:validates_format_of_email
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
