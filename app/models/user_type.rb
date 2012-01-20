@@ -1,6 +1,8 @@
 require 'metaid'
 
 # Include this to be a type of user (student, prof)
+# You will need to setup a one-to-one association to User and
+# include `after_initialize :setup_user` in your class.
 module UserType
 
   private 
