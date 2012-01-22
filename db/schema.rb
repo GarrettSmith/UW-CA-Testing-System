@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120113184702) do
+ActiveRecord::Schema.define(:version => 20120119222613) do
 
   create_table "answers", :force => true do |t|
     t.float    "earned_marks"
@@ -51,6 +51,13 @@ ActiveRecord::Schema.define(:version => 20120113184702) do
     t.string   "option_type"
     t.boolean  "solution"
     t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "professors", :force => true do |t|
+    t.string   "office_number"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -106,6 +113,13 @@ ActiveRecord::Schema.define(:version => 20120113184702) do
     t.integer  "section_test_id"
   end
 
+  create_table "students", :force => true do |t|
+    t.string   "student_number"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "test_files", :force => true do |t|
     t.string   "type"
     t.boolean  "modifiable"
@@ -126,10 +140,6 @@ ActiveRecord::Schema.define(:version => 20120113184702) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "type"
-    t.string   "office_number"
-    t.string   "office_hours"
-    t.integer  "student_number"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

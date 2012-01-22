@@ -38,4 +38,9 @@ class StudentTest < ActiveRecord::Base
     not answers.map{ |x| x.submitted? }.include?(false)
   end
 
+  # Returns true if all answers are marked.
+  def marked?
+    not answers.map{ |x| x.marked? }.include?(false)
+  end
+
 end

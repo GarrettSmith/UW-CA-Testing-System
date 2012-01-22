@@ -1,7 +1,15 @@
+class Professor < ActiveRecord::Base
+  include UserType
 
-class Professor < User
+  belongs_to :user, :autosave => true
+
   has_many :sections
   has_many :section_tests, :through => :sections
+
+  attr_accessible :office_number
+
+  after_initialize :setup_user
+
 
   $recent_test_size = 0
 
