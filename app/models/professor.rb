@@ -10,6 +10,7 @@ class Professor < ActiveRecord::Base
 
   after_initialize :setup_user
 
+  >>>>>>> bf32b5193e70b6e27004d90e6fac2c9b9b816956
 
   $recent_test_size = 0
 
@@ -36,4 +37,6 @@ class Professor < ActiveRecord::Base
   end
 
 
+
+>>>>>>> bf32b5193e70b6e27004d90e6fac2c9b9b816956
 end
