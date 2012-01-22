@@ -1,4 +1,12 @@
 UWCATestingSystem::Application.routes.draw do
+  get "professor/home"
+
+  get "professor/section"
+
+  get "professor/test"
+
+  get "professor/settings"
+
   resources :section_tests
 
   resources :answers

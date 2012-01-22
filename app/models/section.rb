@@ -24,4 +24,10 @@ class Section < ActiveRecord::Base
     marks = enrolled_students.map{ |x| x.average_percentage }
     median(marks)
   end
+
+    def self.recent_tests(professor_id, total_amount)
+    recent_sections = Section.all()
+    recent_sections
+    end
+
 end 

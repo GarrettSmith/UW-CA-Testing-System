@@ -111,7 +111,7 @@ ActiveRecord::Schema.define(:version => 20120113184702) do
     t.boolean  "modifiable"
     t.boolean  "executable"
     t.boolean  "highlight_syntax"
-    t.string   "path"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
