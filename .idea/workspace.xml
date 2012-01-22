@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9afc1ca-a934-4fe8-9c15-4260886766ec" name="Default" comment="I have created the professor views, created the webpages within, and built the first data accessors.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/UW-CA-Testing-System.iml" afterPath="$PROJECT_DIR$/.idea/UW-CA-Testing-System.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/professor.rb" afterPath="$PROJECT_DIR$/app/models/professor.rb" />
-    </list>
+    <list default="true" id="e9afc1ca-a934-4fe8-9c15-4260886766ec" name="Default" comment="I have created the professor views, created the webpages within, and built the first data accessors." />
     <list id="cf83910c-9fa7-492b-9eff-b43c7316f963" name="Failed commit: Default" comment="I have created the professor views, created the webpages within, and built the first data accessors." />
     <ignored path="UW-CA-Testing-System.iws" />
     <ignored path=".idea/workspace.xml" />
