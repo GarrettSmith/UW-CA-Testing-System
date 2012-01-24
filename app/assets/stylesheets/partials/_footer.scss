@@ -1,45 +1,57 @@
+/*Imports*/
+@import "compass/layout/sticky-footer";
+
+/*Colors*/
+$footer-background: hsl(180, 15%, 90%);
+$footer-font-color: hsla(0, 0%, 0%, 0.6);
+$footer-link-color: $footer-font-color;
+
+/*Font*/
+$footer-font-size: 0.9em;
+
 footer {
-  background: rgb(235, 240, 240);
-  font-size: 0.8em;
-  color: rgb(105, 110, 110);
+  background: $footer-background;
+  font-size: $footer-font-size;
+  color: $footer-font-color;
   border-top: 1px solid white;
   box-shadow: rgba(0,0,0,0.2) 0 -1px 1px;
-}
 
-footer section {
-  margin: 0 auto;
-  padding: 40px 0 10px 0;
-}
+  section {
+    margin: 0 auto;
+    padding: 40px 0 10px 0;
+  }
 
-footer a {
-   color: inherit;
-   padding: 0;
-   font-size: 0.9em;
-   font-weight: bold;
-}
+  a {
+     color: $footer-link-color;
+     padding: 0;
+     font-size: 0.9em;
+     font-weight: bold;
+  }
 
-footer h1 {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  text-shadow: 0 1px 0px white;
-}
+  h1 {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 1px 0px white;
+  }
 
-footer nav {
-  display: inline-block;
-  float: left;
-}
+  nav {
+    display: inline-block;
+    float: left;
+  }
 
-footer menu {
-  list-style: none;
-  padding: 0;
-  margin: 0 40px 30px 0;
-}
+  menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 40px 30px 0;
 
-footer menu li {
-  margin: 2px 0;
-}
+    li {
+      margin: 2px 0;
+    }
 
-footer p {
-  clear: left;
+  }
+
+  p {
+    clear: left;
+  }
 }

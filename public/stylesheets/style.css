@@ -682,56 +682,52 @@ header h1 {
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
 }
 
-/* line 1, ../../app/assets/stylesheets/partials/_footer.scss */
+/*Imports*/
+/*Colors*/
+/*Font*/
+/* line 12, ../../app/assets/stylesheets/partials/_footer.scss */
 footer {
-  background: #ebf0f0;
-  font-size: 0.8em;
-  color: #696e6e;
+  background: #e2e9e9;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.6);
   border-top: 1px solid white;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 1px;
 }
-
-/* line 9, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 19, ../../app/assets/stylesheets/partials/_footer.scss */
 footer section {
   margin: 0 auto;
   padding: 40px 0 10px 0;
 }
-
-/* line 14, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 24, ../../app/assets/stylesheets/partials/_footer.scss */
 footer a {
-  color: inherit;
+  color: rgba(0, 0, 0, 0.6);
   padding: 0;
   font-size: 0.9em;
   font-weight: bold;
 }
-
-/* line 21, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 31, ../../app/assets/stylesheets/partials/_footer.scss */
 footer h1 {
   display: inline;
   padding: 0;
   margin: 0;
   text-shadow: 0 1px 0px white;
 }
-
-/* line 28, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 38, ../../app/assets/stylesheets/partials/_footer.scss */
 footer nav {
   display: inline-block;
   float: left;
 }
-
-/* line 33, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 43, ../../app/assets/stylesheets/partials/_footer.scss */
 footer menu {
   list-style: none;
   padding: 0;
   margin: 0 40px 30px 0;
 }
-
-/* line 39, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 48, ../../app/assets/stylesheets/partials/_footer.scss */
 footer menu li {
   margin: 2px 0;
 }
-
-/* line 43, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_footer.scss */
 footer p {
   clear: left;
 }
