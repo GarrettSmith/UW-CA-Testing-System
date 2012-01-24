@@ -64,3 +64,36 @@ table tbody tr:nth-child(2n),
 .unmarked:nth-child(2n) {
   background: rgb(250,235,235);
 }
+
+#actions ul {
+  margin: 0;
+}
+
+#actions ul li {
+  padding: 6px;
+}
+
+.active {
+  background: hsl(0, 0%, 97%);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 0 0 3px;
+}
+
+.active label {
+  float: left;
+  display: inline-block;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.5);
+  margin: 4px;
+}
+
+.active input[type="checkbox"] {
+  margin: 6px;
+}
+
+#main .active menu{
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+

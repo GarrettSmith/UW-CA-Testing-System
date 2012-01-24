@@ -55,8 +55,12 @@ header {
 
     &:active {
       color: $header-link-active-color;
-      background: hsla(0, 0%, 100%, 0.6);
+      background: hsla(0, 0%, 0%, 0.6);
       box-shadow: rgba(255,255,255,0.4) 0 1px 1px;
+    }
+
+    &:visited {
+      color: $header-link-visited-color;
     }
   }
 

@@ -1,0 +1,12 @@
+/* line 5, ../../app/assets/stylesheets/sections.css.scss */
+#info ul {
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+/* line 12, ../../app/assets/stylesheets/sections.css.scss */
+#info ul span {
+  font-weight: normal;
+}

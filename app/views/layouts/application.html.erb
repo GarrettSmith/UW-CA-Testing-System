@@ -15,7 +15,7 @@
   
   <body class="<%= "#{controller.controller_name}" %>">
     
-    <div id="container">
+    <div id="root">
       <header>
         <%= render "layouts/header" %>
       </header>
@@ -24,11 +24,14 @@
         <%= render "layouts/flashes" %>
         <%= yield %>
       </div>
+
+      <div id="footer-root">
+      </div>
         
-      <footer>
-        <%= render "layouts/footer" %>
-      </footer>
     </div>
+    <footer>
+      <%= render "layouts/footer" %>
+    </footer>
         
   <%#Javascript at the bottom for fast page loading%>
   <%= render "layouts/javascripts" %>

@@ -305,322 +305,33 @@ input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 49, ../../app/assets/stylesheets/partials/_page.scss */
+/* line 52, ../../app/assets/stylesheets/partials/_page.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 56, ../../app/assets/stylesheets/partials/_page.scss */
 body {
   background-color: white;
-  background: -webkit-linear-gradient(top, #ebf0f0, white 60px, white);
 }
 
-/* line 55, ../../app/assets/stylesheets/partials/_page.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 59, ../../app/assets/stylesheets/partials/_page.scss */
-a:hover {
-  text-decoration: underline;
-}
-
-/* line 63, ../../app/assets/stylesheets/partials/_page.scss */
-h1 {
-  font-size: 1.2em;
-}
-
-/* line 67, ../../app/assets/stylesheets/partials/_page.scss */
+/* line 60, ../../app/assets/stylesheets/partials/_page.scss */
 section {
   overflow: hidden;
 }
 
-/* line 71, ../../app/assets/stylesheets/partials/_page.scss */
-footer section, #main {
-  width: 1200px;
+/* line 65, ../../app/assets/stylesheets/partials/_page.scss */
+a {
+  text-decoration: none;
+}
+/* line 68, ../../app/assets/stylesheets/partials/_page.scss */
+a:hover {
+  text-decoration: underline;
 }
 
 /* line 75, ../../app/assets/stylesheets/partials/_page.scss */
-#main {
-  overflow: hidden;
-  margin: 10px auto;
-}
-
-/* line 80, ../../app/assets/stylesheets/partials/_page.scss */
-#main section {
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-
-/* line 85, ../../app/assets/stylesheets/partials/_page.scss */
-#main p {
-  text-align: justify;
-}
-
-/* line 89, ../../app/assets/stylesheets/partials/_page.scss */
-#main ul {
-  padding: 0;
-  font-size: 0.9em;
-}
-
-/* line 94, ../../app/assets/stylesheets/partials/_page.scss */
-#main ul li {
-  padding: 2px;
-}
-
-/* line 98, ../../app/assets/stylesheets/partials/_page.scss */
-#info ul {
-  float: left;
-  margin-right: 20px;
-  list-style: none;
-  font-weight: bold;
-}
-
-/* line 105, ../../app/assets/stylesheets/partials/_page.scss */
-#info ul span {
-  font-weight: normal;
-}
-
-/* line 109, ../../app/assets/stylesheets/partials/_page.scss */
-#actions ul {
-  margin: 0;
-}
-
-/* line 113, ../../app/assets/stylesheets/partials/_page.scss */
-#actions ul li {
-  padding: 6px;
-}
-
-/* line 117, ../../app/assets/stylesheets/partials/_page.scss */
-#main p {
-  font-size: 0.9em;
-  line-height: 1.4em;
-}
-
-/* line 122, ../../app/assets/stylesheets/partials/_page.scss */
-#main h1 a {
-  color: inherit;
-}
-
-/* line 126, ../../app/assets/stylesheets/partials/_page.scss */
-#main h1 {
-  width: 900px;
-  margin: 16px 0 16px 0;
-}
-
-/* line 131, ../../app/assets/stylesheets/partials/_page.scss */
-#main h2 {
-  margin: 10px 0;
-}
-
-/* line 135, ../../app/assets/stylesheets/partials/_page.scss */
-#main menu {
-  list-style: none;
-  padding: 0;
-  background: #fafafa;
-  border-top: 1px solid white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 1px;
-  overflow: hidden;
-  margin: 6px 0 0 0;
-}
-
-/* line 146, ../../app/assets/stylesheets/partials/_page.scss */
-#main menu li {
-  float: left;
-  display: block;
-  padding: 2px;
-  margin-right: 6px;
-}
-
-/* line 153, ../../app/assets/stylesheets/partials/_page.scss */
-#main menu li:last-child {
-  float: right;
-  margin-right: 2px;
-}
-
-/* line 158, ../../app/assets/stylesheets/partials/_page.scss */
-input, textarea, select {
-  -webkit-transition: all 100ms linear;
-}
-
-/* line 165, ../../app/assets/stylesheets/partials/_page.scss */
-input[type="text"],
-input[type="number"],
-select,
-textarea {
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 6px inset;
-  border-radius: 4px;
-  padding: 4px;
-  border: 1px solid #b3b3b3;
-}
-
-/* line 173, ../../app/assets/stylesheets/partials/_page.scss */
-select {
-  background: -webkit-linear-gradient(top, #ededed, white 25%);
-}
-
-/* line 177, ../../app/assets/stylesheets/partials/_page.scss */
-input[type="checkbox"] {
-  background: red;
-  border: 1px solid blue;
-  -webkit-apperance: none;
-}
-
-/* line 183, ../../app/assets/stylesheets/partials/_page.scss */
-.filter {
-  width: 200px;
-  float: right;
-}
-
-/* line 188, ../../app/assets/stylesheets/partials/_page.scss */
-#test input[type="text"], #test textarea {
-  display: block;
-  width: 100%;
-  /*Voodoo to make the input not overflow*/
-  box-sizing: border-box;
-  margin-bottom: 6px;
-}
-
-/* line 196, ../../app/assets/stylesheets/partials/_page.scss */
-#test {
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0 6px;
-  margin: 4px;
-}
-
-/* line 201, ../../app/assets/stylesheets/partials/_page.scss */
-#test section {
-  padding: 6px;
-  margin: 0;
-}
-
-/* line 206, ../../app/assets/stylesheets/partials/_page.scss */
-#test ol {
-  padding: 0;
-  list-style-position: inside;
-  list-style: none;
-}
-
-/* line 212, ../../app/assets/stylesheets/partials/_page.scss */
-#test ol li {
-  padding: 4px;
-}
-
-/* line 216, ../../app/assets/stylesheets/partials/_page.scss */
-#test menu li button {
-  min-width: 24px;
-}
-
-/* line 220, ../../app/assets/stylesheets/partials/_page.scss */
-.active {
-  background: #f7f7f7;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
-}
-
-/* line 226, ../../app/assets/stylesheets/partials/_page.scss */
-.active label {
-  float: left;
-  display: inline-block;
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.5);
-  margin: 4px;
-}
-
-/* line 234, ../../app/assets/stylesheets/partials/_page.scss */
-.active input[type="checkbox"] {
-  margin: 6px;
-}
-
-/* line 238, ../../app/assets/stylesheets/partials/_page.scss */
-#main .active menu {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-/* line 244, ../../app/assets/stylesheets/partials/_page.scss */
-#test-title {
-  font-size: 1.4em;
-  font-weight: bold;
-}
-
-/* line 249, ../../app/assets/stylesheets/partials/_page.scss */
-.question-title {
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-/* line 254, ../../app/assets/stylesheets/partials/_page.scss */
-.question-text {
-  height: 120px;
-}
-
-/* line 258, ../../app/assets/stylesheets/partials/_page.scss */
-input[type="checkbox"] {
-  padding: 0;
-  margin: 0 4px;
-}
-
-/* line 263, ../../app/assets/stylesheets/partials/_page.scss */
-input:focus, textarea:focus, select:focus {
-  border-color: #5a96ff;
-  outline: none;
-}
-
-/* line 268, ../../app/assets/stylesheets/partials/_page.scss */
-button {
-  display: block;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  padding: 4px 6px;
-  border-radius: 4px;
-  -webkit-transition: all 60ms linear;
-  font-size: 0.9em;
-  cursor: pointer;
-  border: none;
-}
-
-/* line 281, ../../app/assets/stylesheets/partials/_page.scss */
-button, #main menu button:hover {
-  background: #f5f5f5;
-  background: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
-  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px, rgba(0, 0, 0, 0.3) 0 0 2px, white 0 1px 1px inset;
-  color: rgba(0, 0, 0, 0.6);
-  text-shadow: white 0 1px;
-}
-
-/* line 292, ../../app/assets/stylesheets/partials/_page.scss */
-#main menu button {
-  background: transparent;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 0 1px;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-/* line 298, ../../app/assets/stylesheets/partials/_page.scss */
-button:hover, #main menu button:active {
-  background: #5a96ff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  color: white;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
-  text-decoration: none;
-}
-
-/* line 306, ../../app/assets/stylesheets/partials/_page.scss */
-.select-button:after, .download-button:after, .view-button:after {
-  content: "\0000a0▾";
-}
-
-/* line 310, ../../app/assets/stylesheets/partials/_page.scss */
-.add-button, .add-button:hover {
-  border-radius: 4px 0 0 4px;
-  margin-right: -5px;
-  text-shadow: white 0 1px;
-  text-shadow: white 0 1px;
-}
-
-/* line 317, ../../app/assets/stylesheets/partials/_page.scss */
-.remove-button, .remove-button:hover {
-  border-radius: 0 4px 4px 0;
-  margin-left: -4px;
+h1 {
+  font-size: 1.2em;
 }
 
 /*Imports*/
@@ -673,10 +384,14 @@ header a:hover {
 /* line 56, ../../app/assets/stylesheets/partials/_header.scss */
 header a:active {
   color: white;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px;
 }
-/* line 65, ../../app/assets/stylesheets/partials/_header.scss */
+/* line 62, ../../app/assets/stylesheets/partials/_header.scss */
+header a:visited {
+  color: white;
+}
+/* line 69, ../../app/assets/stylesheets/partials/_header.scss */
 header h1 {
   padding: 10px;
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
@@ -685,51 +400,143 @@ header h1 {
 /*Imports*/
 /*Colors*/
 /*Font*/
-/* line 12, ../../app/assets/stylesheets/partials/_footer.scss */
+/*Snap footer to bottom of screen*/
+/*NOTE: You will need to set this height manually if you alter the footer*/
+/* line 10, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -201px;
+}
+/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+#root #footer-root {
+  height: 201px;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+footer {
+  clear: both;
+  position: relative;
+  height: 201px;
+}
+
+/* line 20, ../../app/assets/stylesheets/partials/_footer.scss */
 footer {
   background: #e2e9e9;
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.6);
   border-top: 1px solid white;
+  font-size: 0.85em;
+  color: rgba(0, 0, 0, 0.6);
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 1px;
+  height: 200px;
 }
-/* line 19, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 28, ../../app/assets/stylesheets/partials/_footer.scss */
 footer section {
+  width: 1200px;
   margin: 0 auto;
   padding: 40px 0 10px 0;
 }
-/* line 24, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 34, ../../app/assets/stylesheets/partials/_footer.scss */
 footer a {
   color: rgba(0, 0, 0, 0.6);
-  padding: 0;
   font-size: 0.9em;
   font-weight: bold;
 }
-/* line 31, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 39, ../../app/assets/stylesheets/partials/_footer.scss */
+footer a:hover, footer a:active, footer a:visited {
+  color: rgba(0, 0, 0, 0.6);
+}
+/* line 44, ../../app/assets/stylesheets/partials/_footer.scss */
 footer h1 {
   display: inline;
-  padding: 0;
-  margin: 0;
   text-shadow: 0 1px 0px white;
 }
-/* line 38, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 49, ../../app/assets/stylesheets/partials/_footer.scss */
 footer nav {
   display: inline-block;
   float: left;
 }
-/* line 43, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 54, ../../app/assets/stylesheets/partials/_footer.scss */
 footer menu {
   list-style: none;
-  padding: 0;
   margin: 0 40px 30px 0;
 }
-/* line 48, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 58, ../../app/assets/stylesheets/partials/_footer.scss */
 footer menu li {
   margin: 2px 0;
 }
-/* line 54, ../../app/assets/stylesheets/partials/_footer.scss */
+/* line 63, ../../app/assets/stylesheets/partials/_footer.scss */
 footer p {
   clear: left;
+}
+
+/* line 5, ../../app/assets/stylesheets/partials/_main.scss */
+#main {
+  width: 1200px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+/* line 10, ../../app/assets/stylesheets/partials/_main.scss */
+#main section {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+/* line 15, ../../app/assets/stylesheets/partials/_main.scss */
+#main ul {
+  padding: 0;
+  font-size: 0.9em;
+}
+/* line 19, ../../app/assets/stylesheets/partials/_main.scss */
+#main ul li {
+  padding: 2px;
+}
+/* line 24, ../../app/assets/stylesheets/partials/_main.scss */
+#main p {
+  text-align: justify;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+/* line 30, ../../app/assets/stylesheets/partials/_main.scss */
+#main h1 {
+  width: 900px;
+  margin: 16px 0 16px 0;
+}
+/* line 34, ../../app/assets/stylesheets/partials/_main.scss */
+#main h1 a {
+  color: inherit;
+}
+/* line 39, ../../app/assets/stylesheets/partials/_main.scss */
+#main h2 {
+  margin: 10px 0;
+}
+/* line 43, ../../app/assets/stylesheets/partials/_main.scss */
+#main menu {
+  list-style: none;
+  padding: 0;
+  background: #fafafa;
+  border-top: 1px solid white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 1px;
+  overflow: hidden;
+  margin: 6px 0 0 0;
+}
+/* line 53, ../../app/assets/stylesheets/partials/_main.scss */
+#main menu li {
+  float: left;
+  display: block;
+  padding: 2px;
+  margin-right: 6px;
+}
+/* line 59, ../../app/assets/stylesheets/partials/_main.scss */
+#main menu li:last-child {
+  float: right;
+  margin-right: 2px;
 }
 
 /* line 1, ../../app/assets/stylesheets/partials/_table.scss */
@@ -811,8 +618,151 @@ table tbody tr:nth-child(2n),
   background: #faebeb;
 }
 
+/* line 68, ../../app/assets/stylesheets/partials/_table.scss */
+#actions ul {
+  margin: 0;
+}
+
+/* line 72, ../../app/assets/stylesheets/partials/_table.scss */
+#actions ul li {
+  padding: 6px;
+}
+
+/* line 76, ../../app/assets/stylesheets/partials/_table.scss */
+.active {
+  background: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+/* line 82, ../../app/assets/stylesheets/partials/_table.scss */
+.active label {
+  float: left;
+  display: inline-block;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 4px;
+}
+
+/* line 90, ../../app/assets/stylesheets/partials/_table.scss */
+.active input[type="checkbox"] {
+  margin: 6px;
+}
+
+/* line 94, ../../app/assets/stylesheets/partials/_table.scss */
+#main .active menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 1, ../../app/assets/stylesheets/partials/_forms.scss */
+input[type="checkbox"] {
+  padding: 0;
+  margin: 0 4px;
+}
+
+/* line 6, ../../app/assets/stylesheets/partials/_forms.scss */
+input:focus, textarea:focus, select:focus {
+  border-color: #5a96ff;
+  outline: none;
+}
+
+/* line 11, ../../app/assets/stylesheets/partials/_forms.scss */
+button {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 6px;
+  border-radius: 4px;
+  -webkit-transition: all 60ms linear;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+}
+
+/* line 24, ../../app/assets/stylesheets/partials/_forms.scss */
+button, #main menu button:hover {
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px, rgba(0, 0, 0, 0.3) 0 0 2px, white 0 1px 1px inset;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: white 0 1px;
+}
+
+/* line 35, ../../app/assets/stylesheets/partials/_forms.scss */
+#main menu button {
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 1px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 41, ../../app/assets/stylesheets/partials/_forms.scss */
+button:hover, #main menu button:active {
+  background: #5a96ff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+/* line 49, ../../app/assets/stylesheets/partials/_forms.scss */
+.select-button:after, .download-button:after, .view-button:after {
+  content: "\0000a0▾";
+}
+
+/* line 53, ../../app/assets/stylesheets/partials/_forms.scss */
+.add-button, .add-button:hover {
+  border-radius: 4px 0 0 4px;
+  margin-right: -5px;
+  text-shadow: white 0 1px;
+  text-shadow: white 0 1px;
+}
+
+/* line 60, ../../app/assets/stylesheets/partials/_forms.scss */
+.remove-button, .remove-button:hover {
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+}
+
+/* line 65, ../../app/assets/stylesheets/partials/_forms.scss */
+input, textarea, select {
+  -webkit-transition: all 100ms linear;
+}
+
+/* line 72, ../../app/assets/stylesheets/partials/_forms.scss */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 6px inset;
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid #b3b3b3;
+}
+
+/* line 80, ../../app/assets/stylesheets/partials/_forms.scss */
+select {
+  background: -webkit-linear-gradient(top, #ededed, white 25%);
+}
+
+/* line 84, ../../app/assets/stylesheets/partials/_forms.scss */
+input[type="checkbox"] {
+  background: red;
+  border: 1px solid blue;
+  -webkit-apperance: none;
+}
+
+/* line 90, ../../app/assets/stylesheets/partials/_forms.scss */
+.filter {
+  width: 200px;
+  float: right;
+}
+
 @media only screen and (max-width: 1212px) {
-  /* line 7, ../../app/assets/stylesheets/partials/_media.scss */
+  /* line 9, ../../app/assets/stylesheets/partials/_media.scss */
   #main, footer section {
     width: inherit;
     margin-left: 6px;
