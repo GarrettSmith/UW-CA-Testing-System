@@ -12,11 +12,6 @@ end
 
 module UWCATestingSystem
   class Application < Rails::Application
-    # Configure sass load path
-    config.sass.load_paths ||= []
-    config.sass.load_paths << "#{Rails.root}/app/assets/stylesheets"
-    config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
-    config.sass.load_paths << "#{Gem.loaded_specs['html5-boilerplate'].full_gem_path}/stylesheets"
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -50,6 +45,16 @@ module UWCATestingSystem
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # add rspec to generators
+    config.generators do |g|
+      g.test_framework :rspec
+    end
     
+    # Configure sass load path
+    config.sass.load_paths ||= []
+    config.sass.load_paths << "#{Rails.root}/app/assets/stylesheets"
+    config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
+    config.sass.load_paths << "#{Gem.loaded_specs['html5-boilerplate'].full_gem_path}/stylesheets"
   end
 end
