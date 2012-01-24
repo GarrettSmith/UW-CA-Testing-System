@@ -623,61 +623,61 @@ button:hover, #main menu button:active {
   margin-left: -4px;
 }
 
-/* line 1, ../../app/assets/stylesheets/partials/_header.scss */
+/*Imports*/
+/*Link Colors*/
+/*background Colors*/
+/* line 16, ../../app/assets/stylesheets/partials/_header.scss */
 header {
   overflow: hidden;
-  background: #3c3c3c;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #262626));
   background: -webkit-linear-gradient(top, #666666, #262626);
+  background: -moz-linear-gradient(top, #666666, #262626);
+  background: -o-linear-gradient(top, #666666, #262626);
+  background: -ms-linear-gradient(top, #666666, #262626);
+  background: linear-gradient(top, #666666, #262626);
   box-shadow: rgba(0, 0, 0, 0.8) 0 1px 3px, rgba(255, 255, 255, 0.9) 0 1px 1px inset;
-  color: white;
   overflow: hidden;
   text-shadow: 0 1px 2px black;
 }
-
-/* line 13, ../../app/assets/stylesheets/partials/_header.scss */
+/* line 24, ../../app/assets/stylesheets/partials/_header.scss */
 header menu {
   list-style: none;
   float: left;
   overflow: hidden;
 }
-
-/* line 19, ../../app/assets/stylesheets/partials/_header.scss */
+/* line 30, ../../app/assets/stylesheets/partials/_header.scss */
 header menu:last-child {
   float: right;
 }
-
-/* line 23, ../../app/assets/stylesheets/partials/_header.scss */
+/* line 34, ../../app/assets/stylesheets/partials/_header.scss */
 header menu li {
   float: left;
   margin: 6px;
 }
-
-/* line 28, ../../app/assets/stylesheets/partials/_header.scss */
+/* line 39, ../../app/assets/stylesheets/partials/_header.scss */
 header a {
-  color: inherit;
+  color: white;
   padding: 6px 8px;
   border-radius: 3px;
   display: block;
   font-weight: bold;
   -webkit-transition: all 100ms linear;
 }
-
-/* line 37, ../../app/assets/stylesheets/partials/_header.scss */
-header menu a:hover {
+/* line 48, ../../app/assets/stylesheets/partials/_header.scss */
+header a:hover {
+  color: white;
   background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   box-shadow: rgba(255, 255, 255, 0.3) 0 -1px 1px, rgba(0, 0, 0, 0.9) 0 1px 3px;
 }
-
-/* line 44, ../../app/assets/stylesheets/partials/_header.scss */
-header menu a:active {
-  background: rgba(0, 0, 0, 0.6);
+/* line 56, ../../app/assets/stylesheets/partials/_header.scss */
+header a:active {
+  color: white;
+  background: rgba(255, 255, 255, 0.6);
   box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px;
 }
-
-/* line 49, ../../app/assets/stylesheets/partials/_header.scss */
+/* line 65, ../../app/assets/stylesheets/partials/_header.scss */
 header h1 {
-  margin: 0;
   padding: 10px;
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
 }
