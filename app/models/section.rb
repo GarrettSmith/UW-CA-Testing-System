@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: sections
+#
+#  id           :integer         not null, primary key
+#  number       :integer
+#  room_number  :string(255)
+#  created_at   :datetime
+#  updated_at   :datetime
+#  professor_id :integer
+#  course_id    :integer
+#  semester_id  :integer
+#
+
 # A collection of tests with students and a professor.
 class Section < ActiveRecord::Base
   

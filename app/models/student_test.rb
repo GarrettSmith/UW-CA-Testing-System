@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: student_tests
+#
+#  id                  :integer         not null, primary key
+#  time_started        :datetime
+#  time_submitted      :datetime
+#  created_at          :datetime
+#  updated_at          :datetime
+#  enrolled_student_id :integer
+#  section_test_id     :integer
+#
+
 # A collection of answers to a test created by a student.
 class StudentTest < ActiveRecord::Base
   belongs_to :enrolled_student

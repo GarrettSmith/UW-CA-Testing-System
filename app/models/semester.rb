@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: semesters
+#
+#  id         :integer         not null, primary key
+#  start_time :date
+#  end_time   :date
+#  name       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 class Semester < ActiveRecord::Base
 
   include TimeInfo

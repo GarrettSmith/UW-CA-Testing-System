@@ -42,4 +42,6 @@ group :test, :development do
   #gem 'turn', '0.8.2', :require => false
   # Rspec
   gem 'rspec-rails'
+  # Add attribute comments to the start of models
+  gem 'annotate', '~> 2.4.1.beta'
 end
