@@ -3,6 +3,13 @@
 // These follow after, and will override, the primary ('mobile first') styles
 // The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
 //
+@media only screen and (max-width: 1212px) {
+  #main, footer section {
+    width: inherit;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
 
 @media only screen and (min-width: 480px) {
   // Style adjustments for viewports 480px and over go here

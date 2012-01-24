@@ -1,0 +1,53 @@
+header {
+  overflow: hidden;
+  background: rgb(60,60,60);
+  background: 
+    -webkit-linear-gradient(top, hsl(0, 0%, 40%), hsl(0, 0%, 15%));
+  box-shadow: hsla(0, 0%, 0%, 0.8) 0 1px 3px,
+    hsla(0, 100%,100%, 0.9) 0 1px 1px inset;
+  color: white;
+  overflow: hidden;
+  text-shadow: 0 1px 2px black;
+}
+
+header menu {
+  list-style: none;
+  float: left;
+  overflow: hidden;
+}
+
+header menu:last-child {
+  float: right;
+}
+
+header menu li {
+  float: left;
+  margin: 6px;
+}
+
+header a {
+  color: inherit;
+  padding: 6px 8px;
+  border-radius: 3px;
+  display: block;
+  font-weight: bold;
+  -webkit-transition: all 100ms linear;
+}
+
+header menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  box-shadow: rgba(255,255,255,0.3) 0 -1px 1px, 
+    rgba(0,0,0,0.9) 0 1px 3px;
+}
+
+header menu a:active {
+  background: rgba(0,0,0,0.6);
+  box-shadow: rgba(255,255,255,0.4) 0 1px 1px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px;
+  text-shadow: hsla(0, 0%, 0%, 0.2) 0 1px 1px;
+}

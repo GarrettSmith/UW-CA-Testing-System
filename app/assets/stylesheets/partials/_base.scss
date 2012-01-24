@@ -6,18 +6,19 @@ $base-font-size: 13px;  // default font-size for YUI fonts
 
 $base-line-height: 1.231;  // default line-height for YUI fonts
 
-$font-color: #444;
+$font-color: hsl(0, 0, 10%);
 
-$link-color: #607890;
+$link-color: hsl(210, 80%, 50%);
 
-$link-hover-color: #036;
+$link-hover-color: $link-color;
 
-$link-active-color: #607890;
+$link-active-color: $link-color;
 
-$link-visited-color: #607890;
+$link-visited-color: $link-color;
 
 $selected-font-color: #fff;  // color for selected text
 
-$selected-background-color: #ff5E99;  // bg-color for selected text
+// bg-color for selected text
+$selected-background-color: lighten($link-color, 0.1);  
 
 $list-left-margin: 2em;  // left margin for ul an ol
