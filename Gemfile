@@ -16,7 +16,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+# AJAXy sexiness
 gem 'jquery-rails'
+
+# Compass and HTML%-boilerplate for up to date standards
+gem 'compass', '>= 0.11.7'
+gem 'html5-boilerplate'
 
 # User authorization
 gem 'cancan'
