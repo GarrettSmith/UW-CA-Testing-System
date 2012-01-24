@@ -28,7 +28,12 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+ #gem 'ruby-debug19', :require => 'ruby-debug'
+
+#ActiveAdmin
+ gem 'activeadmin'
+ gem "meta_search",    '>= 1.1.0.pre'
+
 
 group :test do
   # Pretty printed test output
