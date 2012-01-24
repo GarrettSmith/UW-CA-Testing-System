@@ -6,25 +6,8 @@
 
     <title>Dashboard</title>
 
-
-
   </head>
   <body>
-    <header>
-      <nav>
-        <menu>
-          <li><a href="#">Dash</a></li>
-          <li><a href="Section.html">Sections</a></li>
-          <li>
-            <%= @professor.first_name %> Dashboard</li>
-          <li><a href="Test.html">Tests</a></li>
-        </menu>
-        <menu>
-          <li><a href="#">John Smith</a></li>
-          <li><a href="#" id="settings">Settings</a></li>
-        </menu>
-      </nav>
-    </header>
     <section id="main">
       <%=@active_tests %>
       <%=@marked_tests %>
@@ -173,29 +156,6 @@
         </table>
       </section>
     </section>
-    <footer>
-      <section>
-        <nav>
-          <h1>Actions</h1>
-          <menu>
-            <li><a href="#">View Sections</a></li>
-            <li><a href="#">View Tests</a></li>
-            <li><a href="#">View Profile</a></li>
-            <li><a href="#">Change Settings</a></li>
-          </menu>
-        </nav>
-        <nav>
-          <h1>Resources</h1>
-          <menu>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#"> Tutorial</a></li>
-          </menu>
-        </nav>
-        <p>Licensed under <a href="#">Some Open Source License</a>.
-        Powered by <a href="#">We Need a Name</a>.</p>
-      </section>
-    </footer>
   </body>
 </html>
 

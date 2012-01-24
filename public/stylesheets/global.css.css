@@ -1,0 +1,535 @@
+@charset "UTF-8";
+/* line 1, ../../app/assets/stylesheets/global.css.scss */
+body {
+  background: white;
+  color: black;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  font-size: 11pt;
+  background: -webkit-linear-gradient(top, #ebf0f0, white 60px, white);
+}
+
+/* line 12, ../../app/assets/stylesheets/global.css.scss */
+body, textarea {
+  font-family: "Droid Sans", Arial, sans;
+}
+
+/* line 16, ../../app/assets/stylesheets/global.css.scss */
+a {
+  text-decoration: none;
+  color: #197fe6;
+}
+
+/* line 21, ../../app/assets/stylesheets/global.css.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 25, ../../app/assets/stylesheets/global.css.scss */
+h1 {
+  font-size: 1.2em;
+}
+
+/* line 29, ../../app/assets/stylesheets/global.css.scss */
+section {
+  overflow: hidden;
+}
+
+/* line 33, ../../app/assets/stylesheets/global.css.scss */
+header, footer section, #main {
+  width: 1200px;
+}
+
+/* line 37, ../../app/assets/stylesheets/global.css.scss */
+header h1 {
+  margin: 0;
+  padding: 10px;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
+}
+
+/* line 43, ../../app/assets/stylesheets/global.css.scss */
+header {
+  margin: 10px auto 10px auto;
+  overflow: hidden;
+  background: #3c3c3c;
+  background: -webkit-linear-gradient(top, #666666, #262626);
+  box-shadow: rgba(0, 0, 0, 0.8) 0 1px 3px, rgba(255, 255, 255, 0.9) 0 1px 1px inset;
+  color: white;
+  overflow: hidden;
+  text-shadow: 0 1px 2px black;
+  border-radius: 6px;
+}
+
+/* line 57, ../../app/assets/stylesheets/global.css.scss */
+header menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  overflow: hidden;
+}
+
+/* line 65, ../../app/assets/stylesheets/global.css.scss */
+header menu:last-child {
+  float: right;
+}
+
+/* line 69, ../../app/assets/stylesheets/global.css.scss */
+header menu li {
+  float: left;
+  margin: 6px;
+}
+
+/* line 74, ../../app/assets/stylesheets/global.css.scss */
+header a {
+  color: inherit;
+  padding: 6px 8px;
+  border-radius: 3px;
+  display: block;
+  font-weight: bold;
+  -webkit-transition: all 100ms linear;
+}
+
+/* line 83, ../../app/assets/stylesheets/global.css.scss */
+header menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 -1px 1px, rgba(0, 0, 0, 0.9) 0 1px 3px;
+}
+
+/* line 90, ../../app/assets/stylesheets/global.css.scss */
+header menu a:active {
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 1px;
+}
+
+/* line 95, ../../app/assets/stylesheets/global.css.scss */
+footer {
+  background: #ebf0f0;
+  font-size: 0.8em;
+  color: #696e6e;
+  border-top: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 1px;
+}
+
+/* line 103, ../../app/assets/stylesheets/global.css.scss */
+footer section {
+  margin: 0 auto;
+  padding: 40px 0 10px 0;
+}
+
+/* line 108, ../../app/assets/stylesheets/global.css.scss */
+footer a {
+  color: inherit;
+  padding: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* line 115, ../../app/assets/stylesheets/global.css.scss */
+footer h1 {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  text-shadow: 0 1px 0px white;
+}
+
+/* line 122, ../../app/assets/stylesheets/global.css.scss */
+footer nav {
+  display: inline-block;
+  float: left;
+}
+
+/* line 127, ../../app/assets/stylesheets/global.css.scss */
+footer menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 40px 30px 0;
+}
+
+/* line 133, ../../app/assets/stylesheets/global.css.scss */
+footer menu li {
+  margin: 2px 0;
+}
+
+/* line 137, ../../app/assets/stylesheets/global.css.scss */
+footer p {
+  clear: left;
+}
+
+/* line 141, ../../app/assets/stylesheets/global.css.scss */
+#main {
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+/* line 146, ../../app/assets/stylesheets/global.css.scss */
+#main section {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* line 151, ../../app/assets/stylesheets/global.css.scss */
+#main p {
+  text-align: justify;
+}
+
+/* line 155, ../../app/assets/stylesheets/global.css.scss */
+#main ul {
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* line 160, ../../app/assets/stylesheets/global.css.scss */
+#main ul li {
+  padding: 2px;
+}
+
+/* line 164, ../../app/assets/stylesheets/global.css.scss */
+#info ul {
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+/* line 171, ../../app/assets/stylesheets/global.css.scss */
+#info ul span {
+  font-weight: normal;
+}
+
+/* line 175, ../../app/assets/stylesheets/global.css.scss */
+#actions ul {
+  margin: 0;
+}
+
+/* line 179, ../../app/assets/stylesheets/global.css.scss */
+#actions ul li {
+  padding: 6px;
+}
+
+/* line 183, ../../app/assets/stylesheets/global.css.scss */
+#main p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+/* line 188, ../../app/assets/stylesheets/global.css.scss */
+#main h1 a {
+  color: inherit;
+}
+
+/* line 192, ../../app/assets/stylesheets/global.css.scss */
+#main h1 {
+  width: 900px;
+  margin: 16px 0 16px 0;
+}
+
+/* line 197, ../../app/assets/stylesheets/global.css.scss */
+#main h2 {
+  margin: 10px 0;
+}
+
+/* line 201, ../../app/assets/stylesheets/global.css.scss */
+#main menu {
+  list-style: none;
+  padding: 0;
+  background: #fafafa;
+  border-top: 1px solid white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 1px;
+  overflow: hidden;
+  margin: 6px 0 0 0;
+}
+
+/* line 212, ../../app/assets/stylesheets/global.css.scss */
+#main menu li {
+  float: left;
+  display: block;
+  padding: 2px;
+  margin-right: 6px;
+}
+
+/* line 219, ../../app/assets/stylesheets/global.css.scss */
+#main menu li:last-child {
+  float: right;
+  margin-right: 2px;
+}
+
+/* line 224, ../../app/assets/stylesheets/global.css.scss */
+input, textarea, select {
+  -webkit-transition: all 100ms linear;
+}
+
+/* line 231, ../../app/assets/stylesheets/global.css.scss */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 6px inset;
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid #b3b3b3;
+}
+
+/* line 239, ../../app/assets/stylesheets/global.css.scss */
+select {
+  background: -webkit-linear-gradient(top, #ededed, white 25%);
+}
+
+/* line 243, ../../app/assets/stylesheets/global.css.scss */
+input[type="checkbox"] {
+  background: red;
+  border: 1px solid blue;
+  -webkit-apperance: none;
+}
+
+/* line 249, ../../app/assets/stylesheets/global.css.scss */
+.filter {
+  width: 200px;
+  float: right;
+}
+
+/* line 254, ../../app/assets/stylesheets/global.css.scss */
+#test input[type="text"], #test textarea {
+  display: block;
+  width: 100%;
+  /*Voodoo to make the input not overflow*/
+  box-sizing: border-box;
+  margin-bottom: 6px;
+}
+
+/* line 262, ../../app/assets/stylesheets/global.css.scss */
+#test {
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 6px;
+  margin: 4px;
+}
+
+/* line 267, ../../app/assets/stylesheets/global.css.scss */
+#test section {
+  padding: 6px;
+  margin: 0;
+}
+
+/* line 272, ../../app/assets/stylesheets/global.css.scss */
+#test ol {
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+
+/* line 278, ../../app/assets/stylesheets/global.css.scss */
+#test ol li {
+  padding: 4px;
+}
+
+/* line 282, ../../app/assets/stylesheets/global.css.scss */
+#test menu li button {
+  min-width: 24px;
+}
+
+/* line 286, ../../app/assets/stylesheets/global.css.scss */
+.active {
+  background: #f7f7f7;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+/* line 292, ../../app/assets/stylesheets/global.css.scss */
+.active label {
+  float: left;
+  display: inline-block;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 4px;
+}
+
+/* line 300, ../../app/assets/stylesheets/global.css.scss */
+.active input[type="checkbox"] {
+  margin: 6px;
+}
+
+/* line 304, ../../app/assets/stylesheets/global.css.scss */
+#main .active menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 310, ../../app/assets/stylesheets/global.css.scss */
+#test-title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* line 315, ../../app/assets/stylesheets/global.css.scss */
+.question-title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* line 320, ../../app/assets/stylesheets/global.css.scss */
+.question-text {
+  height: 120px;
+}
+
+/* line 324, ../../app/assets/stylesheets/global.css.scss */
+input[type="checkbox"] {
+  padding: 0;
+  margin: 0 4px;
+}
+
+/* line 329, ../../app/assets/stylesheets/global.css.scss */
+input:focus, textarea:focus, select:focus {
+  border-color: #5a96ff;
+  outline: none;
+}
+
+/* line 334, ../../app/assets/stylesheets/global.css.scss */
+button {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 6px;
+  border-radius: 4px;
+  -webkit-transition: all 60ms linear;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+}
+
+/* line 347, ../../app/assets/stylesheets/global.css.scss */
+button, #main menu button:hover {
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(top, #fafafa, #e6e6e6);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px, rgba(0, 0, 0, 0.3) 0 0 2px, white 0 1px 1px inset;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: white 0 1px;
+}
+
+/* line 358, ../../app/assets/stylesheets/global.css.scss */
+#main menu button {
+  background: transparent;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 1px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 364, ../../app/assets/stylesheets/global.css.scss */
+button:hover, #main menu button:active {
+  background: #5a96ff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+/* line 372, ../../app/assets/stylesheets/global.css.scss */
+.select-button:after, .download-button:after, .view-button:after {
+  content: "\0000a0▾";
+}
+
+/* line 376, ../../app/assets/stylesheets/global.css.scss */
+.add-button, .add-button:hover {
+  border-radius: 4px 0 0 4px;
+  margin-right: -5px;
+  text-shadow: white 0 1px;
+  text-shadow: white 0 1px;
+}
+
+/* line 383, ../../app/assets/stylesheets/global.css.scss */
+.remove-button, .remove-button:hover {
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+}
+
+/* line 388, ../../app/assets/stylesheets/global.css.scss */
+table {
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+/* line 395, ../../app/assets/stylesheets/global.css.scss */
+thead {
+  background: #f2f5f5;
+  background: -webkit-linear-gradient(top, #fafafa, #f5f5f5);
+  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid white;
+  text-align: left;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px 0 white;
+  font-size: 1.05em;
+}
+
+/* line 408, ../../app/assets/stylesheets/global.css.scss */
+th {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px;
+}
+
+/* line 413, ../../app/assets/stylesheets/global.css.scss */
+th:last-child {
+  border: none;
+}
+
+/* line 417, ../../app/assets/stylesheets/global.css.scss */
+td {
+  padding: 6px 4px 6px 4px;
+}
+
+/* line 421, ../../app/assets/stylesheets/global.css.scss */
+table a {
+  color: inherit;
+  font-weight: normal;
+}
+
+/* line 427, ../../app/assets/stylesheets/global.css.scss */
+table tbody tr:nth-child(2n),
+#main ul li:nth-child(2n) {
+  background: rgba(217, 230, 242, 0.4);
+}
+
+/* line 431, ../../app/assets/stylesheets/global.css.scss */
+.checkbox-col {
+  width: 20px;
+}
+
+/* line 435, ../../app/assets/stylesheets/global.css.scss */
+.submitted, .past, .future {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 439, ../../app/assets/stylesheets/global.css.scss */
+.sorted {
+  /*background: hsla(210, 80%, 60%, 0.05);*/
+}
+
+/* line 443, ../../app/assets/stylesheets/global.css.scss */
+.unsubmitted {
+  background: rgba(214, 194, 194, 0.01);
+}
+
+/* line 447, ../../app/assets/stylesheets/global.css.scss */
+.unmarked {
+  background: #faf7f7;
+}
+
+/* line 451, ../../app/assets/stylesheets/global.css.scss */
+.unmarked:nth-child(2n) {
+  background: #faebeb;
+}
+
+/*Media Queries*/
+@media all and (max-width: 1212px) {
+  /* line 458, ../../app/assets/stylesheets/global.css.scss */
+  #main, header, footer section {
+    width: inherit;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
