@@ -15,10 +15,10 @@
 <%# fall back to local jQuery if necessary%>
 <script type="text/javascript" charset="utf-8">
   window.jQuery || 
-  document.write("<script src='/javascripts/jquery.min.js'>\x3C/script>")
+  document.write("#{escape_javascript(javascript_include_tag('jquery'))}")
 </script>
   
-<%= javascript_include_tag 'rails', 'plugins', 'application' %>
-    
+<%= javascript_include_tag 'application' %>
+      
 <%#  Append your own using content_for javascripts >%>
 <%= yield :javascripts %>
