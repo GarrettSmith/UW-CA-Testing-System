@@ -7,6 +7,6 @@ class Semester < ActiveRecord::Base
   attr_accessible :name, :start_time, :end_time
 
   validates :name, :presence => true
-  validates :start_time, :presnce => true
+  validates :start_time, :presence => true
   validates :end_time, :presence => true
 end

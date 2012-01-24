@@ -50,7 +50,7 @@ class StudentTest < ActiveRecord::Base
 
   # Returns true if the student test can still be modified by the student.
   def active?
-    section_test.active? && not submitted?
+    self.section_test.active? && ( not self.submitted? )
   end
 
 end
