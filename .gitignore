@@ -20,3 +20,6 @@
 # Ignore editor and tmp files
 *.swp
 *~
+
+#Ignore Idea folder for Dennys IDE
+/.idea

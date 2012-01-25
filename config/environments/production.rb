@@ -57,4 +57,7 @@ UWCATestingSystem::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # precompile js
+  #config.assets.precompile += %w( jquery.js modernizr+respond.js )
 end

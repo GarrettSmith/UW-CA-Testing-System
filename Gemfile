@@ -14,9 +14,16 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  # Compass and HTML%-boilerplate for up to date standards
+  gem 'compass'
+  gem 'html5-boilerplate'
 end
 
+# AJAXy sexiness
 gem 'jquery-rails'
+
+# User authorization
+gem 'cancan'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

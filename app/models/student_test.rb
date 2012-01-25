@@ -11,6 +11,11 @@ class StudentTest < ActiveRecord::Base
     enrolled_student.student
   end
 
+  # A shortcut to refer to a test's section
+  def section
+    section_test.section
+  end
+
   # The time take is the time the test was submitted minus the time it 
   # was started
   def time_taken
@@ -41,6 +46,11 @@ class StudentTest < ActiveRecord::Base
   # Returns true if all answers are marked.
   def marked?
     not answers.map{ |x| x.marked? }.include?(false)
+  end
+
+  # Returns true if the student test can still be modified by the student.
+  def active?
+    self.section_test.active? && ( not self.submitted? )
   end
 
 end

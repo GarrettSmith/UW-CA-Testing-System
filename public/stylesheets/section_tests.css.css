@@ -1,0 +1,54 @@
+/* line 4, ../../app/assets/stylesheets/section_tests.css.scss */
+#test-title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* line 9, ../../app/assets/stylesheets/section_tests.css.scss */
+.question-title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* line 14, ../../app/assets/stylesheets/section_tests.css.scss */
+.question-text {
+  height: 120px;
+}
+
+/* line 18, ../../app/assets/stylesheets/section_tests.css.scss */
+#test input[type="text"], #test textarea {
+  display: block;
+  width: 100%;
+  /*Voodoo to make the input not overflow*/
+  box-sizing: border-box;
+  margin-bottom: 6px;
+}
+
+/* line 26, ../../app/assets/stylesheets/section_tests.css.scss */
+#test {
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 6px;
+  margin: 4px;
+}
+
+/* line 31, ../../app/assets/stylesheets/section_tests.css.scss */
+#test section {
+  padding: 6px;
+  margin: 0;
+}
+
+/* line 36, ../../app/assets/stylesheets/section_tests.css.scss */
+#test ol {
+  padding: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+
+/* line 42, ../../app/assets/stylesheets/section_tests.css.scss */
+#test ol li {
+  padding: 4px;
+}
+
+/* line 46, ../../app/assets/stylesheets/section_tests.css.scss */
+#test menu li button {
+  min-width: 24px;
+}

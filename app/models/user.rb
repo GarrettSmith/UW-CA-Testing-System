@@ -22,8 +22,30 @@ class User < ActiveRecord::Base
   validates :first_name, :presence => true
   after_initialize :default_values
 
+  # Returns the full name of the user
+  # eg. John Smith
+  def full_name
+    first_name.captialize + " " + last_name.capitalize
+  end
+
+  # Returns whether this user is an admin.
+  def admin?
+    admin
+  end
+
+  # Returns whether this user is a student.
+  def student?
+    not student.nil?
+  end
+
+  # Returns whether this user is a professor.
+  def professor?
+    not professor.nil?
+  end
+
   private 
 
+    # Sets attributes to default values if nil
     def default_values
       self.admin = false if self.admin.nil?
       self.recieve_email = true if self.recieve_email.nil?
