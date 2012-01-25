@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: section_tests
+#
+#  id             :integer         not null, primary key
+#  name           :string(255)
+#  description    :text
+#  start_time     :datetime
+#  end_time       :datetime
+#  time_submitted :datetime
+#  created_at     :datetime
+#  updated_at     :datetime
+#  section_id     :integer
+#
+
 # A collection of questions associated with a section and student tests.
 class SectionTest < ActiveRecord::Base
 

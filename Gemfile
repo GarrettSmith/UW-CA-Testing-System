@@ -42,7 +42,11 @@ gem 'cancan'
  gem "meta_search",    '>= 1.1.0.pre'
 
 
-group :test do
+group :test, :development do
   # Pretty printed test output
-  gem 'turn', '0.8.2', :require => false
+  #gem 'turn', '0.8.2', :require => false
+  # Rspec
+  gem 'rspec-rails'
+  # Add attribute comments to the start of models
+  gem 'annotate', '~> 2.4.1.beta'
 end

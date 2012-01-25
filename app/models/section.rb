@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: sections
+#
+#  id           :integer         not null, primary key
+#  number       :integer
+#  room_number  :string(255)
+#  created_at   :datetime
+#  updated_at   :datetime
+#  professor_id :integer
+#  course_id    :integer
+#  semester_id  :integer
+#
+
 # A collection of tests with students and a professor.
 class Section < ActiveRecord::Base
   
@@ -12,11 +26,25 @@ class Section < ActiveRecord::Base
 
   attr_accessible :number, :room_number
 
+  validates :number, :presence => true
+  validates :room_number, :presence => true
+  validates :course, :presence => true
+  validates :semester, :presence => true
+
+  # The full course number of this section.
+  # eg ACS-2909-001
+  def full_course_number
+    department = self.course.department_code
+    course = self.course.number
+    "#{department}-#{course}-#{number}"
+  end
+
   # The average of all tests from a section.
   def average_percentage
-    total = tests.select{ |x| x.submitted? }.
+    submitted_tests = section_tests.select{ |x| x.submitted? }
+    total = submitted_tests.
       map{ |x| x.average_percentage }.inject(0, :+)
-    total / tests.size
+    total / submitted_tests.size
   end
 
   # The median percentage of all tests in a section.
@@ -24,10 +52,5 @@ class Section < ActiveRecord::Base
     marks = enrolled_students.map{ |x| x.average_percentage }
     median(marks)
   end
-
-    def self.recent_tests(professor_id, total_amount)
-    recent_sections = Section.all()
-    recent_sections
-    end
 
 end 

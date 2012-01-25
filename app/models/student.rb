@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: students
+#
+#  id             :integer         not null, primary key
+#  student_number :string(255)
+#  user_id        :integer
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
 class Student < ActiveRecord::Base
   include UserType
 

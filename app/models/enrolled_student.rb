@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: enrolled_students
+#
+#  id         :integer         not null, primary key
+#  created_at :datetime
+#  updated_at :datetime
+#  student_id :integer
+#  section_id :integer
+#
+
 # A student associated with a scetion.
 class EnrolledStudent < ActiveRecord::Base
   belongs_to :student

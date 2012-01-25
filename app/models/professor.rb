@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: professors
+#
+#  id            :integer         not null, primary key
+#  office_number :string(255)
+#  user_id       :integer
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
 class Professor < ActiveRecord::Base
   include UserType
 
