@@ -41,7 +41,7 @@ class User < ActiveRecord::Base
   # Returns the full name of the user
   # eg. John Smith
   def full_name
-    first_name.captialize + " " + last_name.capitalize
+    first_name.capitalize + " " + last_name.capitalize
   end
 
   # Returns whether this user is an admin.
