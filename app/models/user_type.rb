@@ -23,8 +23,10 @@ module UserType
       User.attribute_names.each do |attr|
         # Don't allow methods to be over written
         if not self.attribute_names.include?(attr) 
-          meta_def attr, do; self.user.send attr; end
-          meta_def "#{attr}=".to_sym, do |x| 
+          meta_def attr do self.user.send attr
+        end
+
+          meta_def "#{attr}=".to_sym do |x|
             self.user.send "#{attr}=".to_sym, x
           end
         end
