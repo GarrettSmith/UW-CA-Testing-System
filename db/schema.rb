@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20120124020200) do
   create_table "courses", :force => true do |t|
     t.string   "name"
     t.string   "number"
-    t.string   "department_code"
+    t.string   "department"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -112,8 +112,8 @@ ActiveRecord::Schema.define(:version => 20120124020200) do
   end
 
   create_table "semesters", :force => true do |t|
-    t.date     "start_time"
-    t.date     "end_time"
+    t.date     "start_date"
+    t.date     "end_date"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -140,7 +140,7 @@ ActiveRecord::Schema.define(:version => 20120124020200) do
     t.boolean  "modifiable"
     t.boolean  "executable"
     t.boolean  "highlight_syntax"
-    t.string   "name"
+    t.string   "path"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -154,6 +154,10 @@ ActiveRecord::Schema.define(:version => 20120124020200) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "type"
+    t.string   "office_number"
+    t.string   "office_hours"
+    t.integer  "student_number"
     t.string   "email",                                 :default => "", :null => false
     t.string   "encrypted_password",     :limit => 128, :default => "", :null => false
     t.string   "reset_password_token"
