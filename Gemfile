@@ -49,4 +49,8 @@ group :test, :development do
   gem 'rspec-rails'
   # Add attribute comments to the start of models
   gem 'annotate', '~> 2.4.1.beta'
+  # Creates factories to create test data
+  gem 'factory_girl_rails'
+  # Creates random values to populate test data
+  gem 'faker'
 end
