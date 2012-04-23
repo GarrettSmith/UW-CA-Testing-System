@@ -1,14 +1,10 @@
 require 'spec_helper'
 
-describe Course do
+describe Semester do
 
   it "should create a new section given valid info" do
 
   it "should have a name"
-
-  it "should have a number"
-
-  it "should have a department code"
 
   describe "associations" do
 
