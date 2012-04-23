@@ -1,6 +1,6 @@
 # A module you can mix in to a class to get information about
 # when it is occuring.
-# To mix in this module a class must defin a start_time and an
+# To mix in this module a class must define a start_time and an
 # end_time.
 module TimeInfo
   # A object is active if the current time is between the start and end 

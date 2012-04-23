@@ -1,3 +1,3 @@
 ActiveAdmin.register User do
-  user.admin?
+  #user.admin?
 end

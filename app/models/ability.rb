@@ -10,7 +10,7 @@ class Ability
 
     # Admins can do anything they want
     if user.admin?
-      can :manager, :all
+      can :manage, :all
     end
 
     # Profs
