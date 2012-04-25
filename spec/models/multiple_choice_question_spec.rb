@@ -1,5 +1,9 @@
 require 'spec_helper'
 
 describe MultipleChoiceQuestion do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "requires at least 2 options"
+
+  it "requires a solution"
+
+  it "has many answers"
 end

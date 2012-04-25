@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe MultipleChoiceOption do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "requires text"
 end

@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe LongAnswerAnswer do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "must belong to a long answer question"
+
+  it "has text"
 end

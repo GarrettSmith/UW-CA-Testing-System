@@ -2,14 +2,11 @@ require 'spec_helper'
 
 describe Semester do
 
-  it "should create a new section given valid info" do
+  it "requires a name"
 
-  it "should have a name"
+  it "requires a start time"
 
-  describe "associations" do
+  it "requires a end time"
 
-    it "should have many sections"
-    
-  end
-  
+  it "has many sections"
 end

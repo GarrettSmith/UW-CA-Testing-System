@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Course do
 
-  it "should create a new section given valid info" do
+  it "should create a new section given valid info"
 
   it "should have a name"
 
