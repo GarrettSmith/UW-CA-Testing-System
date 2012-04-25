@@ -22,6 +22,7 @@ class Student < ActiveRecord::Base
 
   validates :student_number,  :presence => true,
                               :uniqueness => true
+  validates :user,            :presence => true
 
   after_initialize :setup_user
 end

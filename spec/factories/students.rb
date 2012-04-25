@@ -2,5 +2,7 @@
 
 FactoryGirl.define do
   factory :student do
+    sequence(:student_number)
+    user
   end
 end
