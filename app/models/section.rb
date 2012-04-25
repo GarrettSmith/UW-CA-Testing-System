@@ -20,7 +20,7 @@ class Section < ActiveRecord::Base
   has_many :enrolled_students
   has_many :students, :through => :enrolled_students
   has_many :section_tests
-  belongs_to :proffessor
+  belongs_to :professor
   belongs_to :course
   belongs_to :semester
 
@@ -30,6 +30,7 @@ class Section < ActiveRecord::Base
   validates :room_number, :presence => true
   validates :course, :presence => true
   validates :semester, :presence => true
+  validates :professor, :presence => true
 
   # The full course number of this section.
   # eg ACS-2909-001

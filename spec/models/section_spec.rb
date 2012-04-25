@@ -1,74 +1,46 @@
 require 'spec_helper'
 
 describe Section do
-  before :each do
-    course_attr = { :name => "example_course",
-                    :number => 321,
-                    :department_code => "TST",
-                  }
-    @course = Course.create(course_attr)
-
-    semester_attr = { :start_time => Time.now,
-                      :end_time => (Time.now + 6.months),
-                      :name => "Fall",
-                    }
-    @semester = Semester.create(semester_attr)
-
-    @attr = { :number => 1234, 
-              :room_number => "12A3",
-            }
+  it "has a valid factory" do
+    FactoryGirl.create(:section).should be_valid
   end
 
-  it "should create a new section given valid info" do
-    valid_section = Section.new(@attr)
-    valid_section.course = @course
-    valid_section.semester = @semester
-    valid_section.should be_valid
+  it "requires a number" do
+    FactoryGirl.build(:section, number: nil).should_not be_valid
   end
 
-  it "should require a (section) number" do
-    no_number = Section.new(@attr.merge(:number => nil));
-    no_number.should_not be_valid
+  it "requires a room number" do
+    FactoryGirl.build(:section, room_number: nil).should_not be_valid
   end
 
-  it "should require a room number" do
-    no_room = Section.new(@attr.merge(:room_number => ""))
-    no_room.should_not be_valid
-  end
+  it "has a complete section number" 
 
   describe "associations" do
-
-    before :each do
-      @section = Section.new(@attr)
-      @section.course = @course
-      @section.semester = @semester
-      @section.save!
+    it "belong to a course" do
+      FactoryGirl.build(:section, course: nil).should_not be_valid
     end
 
-    it "should require a course" do
-      @section.course = nil
-      @section.should_not be_valid
+    it "belongs to a semester" do
+      FactoryGirl.build(:section, semester: nil).should_not be_valid
     end
 
-    it "should require a semester" do
-      @section.semester = nil
-      @section.should_not be_valid
+    it "belongs to a professor" do 
+      FactoryGirl.build(:section, professor: nil).should_not be_valid
     end
 
-    it "should have a complete section number" do
-      @section.full_course_number.should == "TST-321-1234"
-    end
+    it "has many enrolled students"
+
+    it "has many students"
+
+    it "has many section tests"
+
   end
 
   describe "grades" do
+    it "knows the average grade of section tests"
 
-    before :each do
-      @section = Section.new(@attr)
-    end
+    it "knows the median grade of sections tests"
 
-    it "should have the average grade of section tests"
-
-    it "should have the median grade of section tests"
   end
 
 end
