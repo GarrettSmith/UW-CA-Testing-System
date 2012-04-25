@@ -38,10 +38,17 @@ class User < ActiveRecord::Base
   validates :first_name, :presence => true
   after_initialize :default_values
 
-  # Returns the full name of the user
-  # eg. John Smith
+  # Returns the full name of the user.
+  # eg. John Doe
   def full_name
     first_name.capitalize + " " + last_name.capitalize
+  end
+
+  # Returns the full name of the user with the last name followed by a 
+  # comma first.
+  # eg. Doe, John
+  def full_name_reversed
+    last_name.capitalize + ", " + first_name.capitalize
   end
 
   # Returns whether this user is an admin.
@@ -57,6 +64,16 @@ class User < ActiveRecord::Base
   # Returns whether this user is a professor.
   def professor?
     not professor.nil?
+  end
+
+  # Disables the user recieving non-urgent emails.
+  def disable_email
+    self.recieve_email = false
+  end
+
+  # Enables the user recieving non-urgent emails.
+  def enable_email
+    self.recieve_email = true
   end
 
   private 
