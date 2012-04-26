@@ -83,6 +83,10 @@ describe User do
       FactoryGirl.build(:user, password: "pass").should_not be_valid
     end
 
+    it "shoudl be at most 128 characters long" do
+      FactoryGirl.build(:user, password: "x"*129).should_not be_valid
+    end
+
   end
 
   describe "role" do
@@ -91,11 +95,31 @@ describe User do
     end
 
     it "can be a student" do
-      FactoryGirl.create(:student).user.student?.should == true
+      FactoryGirl.create(:student_user).student?.should == true
     end
 
     it "can be a professor" do
-      FactoryGirl.create(:professor).user.professor?.should == true
+      FactoryGirl.create(:professor_user).professor?.should == true
+    end
+
+    describe ".student?" do
+      it "returns true if the user is a student" do
+        FactoryGirl.create(:student_user).student?.should == true
+      end
+
+      it "returns false if the user is not a student" do
+        FactoryGirl.create(:user).student?.should == false
+      end
+    end
+
+    describe ".professor?" do
+      it "returns true if the user is a prof" do
+        FactoryGirl.create(:professor_user).professor?.should == true
+      end
+
+      it "returns false if the user is not a prof" do
+        FactoryGirl.create(:user).professor?.should == false
+      end
     end
 
   end
