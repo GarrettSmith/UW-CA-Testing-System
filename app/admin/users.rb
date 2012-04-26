@@ -15,12 +15,14 @@ ActiveAdmin.register User do
     default_actions
   end
 
-  show do |u|
+  show :title => proc { user.full_name_reversed } do |u|
     attributes_table do
       row :first_name
       row :last_name
       row :user_name
       row :email
+      row :created_at
+      row :updated_at
     end
     active_admin_comments
   end
