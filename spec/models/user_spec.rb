@@ -75,10 +75,6 @@ describe User do
       FactoryGirl.build(:user, password: nil).should_not be_valid
     end
 
-    it "requires a confirmation password"
-
-    it "should store the encrpyted password"
-
     it "should be at least 6 characters long" do 
       FactoryGirl.build(:user, password: "pass").should_not be_valid
     end
