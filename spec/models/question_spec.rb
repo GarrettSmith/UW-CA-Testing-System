@@ -2,24 +2,61 @@ require 'spec_helper'
 
 describe Question do
 
-  it "requires a possible mark"
+  it "has a valid factory" do
+    FactoryGirl.create(:question).should be_valid
+  end
 
-  it "has a possible mark greater than or equal to 0"
+  it "requires a possible mark" do
+    FactoryGirl.build(:question, possible_marks: nil).should_not be_valid
+  end
 
-  it "must belong to a section test"
+  it "requires possible mark greater than or equal to 0" do
+    FactoryGirl.build(:question, possible_marks: -1).should_not be_valid
+  end
 
-  it "requires text"
+  it "belongs to a section test" do
+    FactoryGirl.build(:question, section_test: nil).should_not be_valid
+  end
 
-  it "can have a name"
+  it "requires text" do
+    FactoryGirl.build(:question, text: nil).should_not be_valid
+  end
 
-  it "can be a bonus question"
+  describe "name" do
+    it "is valid with a name" do
+      name = "Question 007"
+      FactoryGirl.build(:question, name: name).should be_valid
+    end
+
+    it "is valid without a name" do
+      FactoryGirl.build(:question, name: nil).should be_valid
+    end
+
+  end
+
+  describe "bonus" do
+    it "is valid when a bonus question" do
+      FactoryGirl.build(:question, bonus: true).should be_valid
+    end
+
+    it "is valid when not a bonus question" do
+      FactoryGirl.build(:question, bonus: false).should be_valid
+    end
+    
+    it "is not a bonus question by default" do
+      FactoryGirl.build(:question, bonus: nil).bonus?.should == false
+    end
+
+  end
 
   describe "answers" do
-    it "has many answers"
+    it "knows its answers"
 
     it "knows how many of its answers have been marked"
 
     it "is marked if all its answers are marked"
+
+    it "is not marked if it has an unmarked answer"
 
   end
 

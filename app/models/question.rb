@@ -25,12 +25,17 @@ class Question < ActiveRecord::Base
 
   attr_accessor :name, :text, :bonus, :possible_marks
 
-  #validates :name, :presence => true
-  validates :text, :presence => true
-  validates :possible_marks, :presence => true
+  #validates :name,            :presence => true
+  validates :text,            :presence => true
+  validates :possible_marks,  :presence => true
+  validates :section_test,    :presence => true
+
   validates :bonus, :inclusion => { :in => [true, false] }
+
   validates_numericality_of :possible_marks,
                             :greater_than_or_equal_to => 0
+
+  after_initialize :default_values
 
   # The average mark earned by all answers to this question.
   def average_mark
@@ -65,4 +70,11 @@ class Question < ActiveRecord::Base
   def marked?
     not answers.map{ |x| x.marked? }.include?(false)
   end
+
+  private 
+
+    # Sets attributes to default values if nil
+    def default_values
+      self.bonus = false if self.bonus.nil?
+    end
 end
