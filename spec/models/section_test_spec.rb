@@ -2,37 +2,58 @@ require "spec_helper"
 
 describe SectionTest do
 
-  it "should create a new section test given valid info"
-
-  it "should require a name"
-
-  it "should require a start time"
-
-  it "should require an end time"
-
-  describe "associations" do
-
-    it "should require a section"
-
-    it "should require at least one question"
-
-    it "should be able to have mant student tests"
-    
+  it "has a valid factory" do
+    FactoryGirl.create(:section_test).should be_valid
   end
+
+  it "requires a name" do 
+    FactoryGirl.build(:section_test, name: nil).should_not be_valid
+  end
+
+  it "requires a start time" do
+    FactoryGirl.build(:section_test, start_time: nil).should_not be_valid
+  end
+
+  it "requires an end time" do
+    FactoryGirl.build(:section_test, end_time: nil).should_not be_valid
+  end
+
+  it "belongs to a section" do
+    FactoryGirl.build(:section_test, section: nil).should_not be_valid
+  end
+
+  describe "can have a description" do
+    it "is valid with a description" do
+      desc= "This is a super important test!"
+      FactoryGirl.create(:section_test, description: desc).should be_valid
+    end
+
+    it "is valid without a description" do
+      FactoryGirl.create(:section_test, description: nil).should be_valid
+    end
+  end
+
+  #it "requires at least one question"
+
+  it "has many student tests"
 
   describe "grades" do
 
-    it "should have possible marks equal to its question's"
+    it "has a possible mark equal to the possible marks of its questions"
 
-    it "should have bonus marks equal to its bonus question's"
+    it "has bonus marks equal to the possible marks of its bonus questions"
 
-    it "should have an average grade"
+    it "has an average grade"
 
-    it "should have a median grade"
+    it "has a median grade"
 
     describe "submitting" do
 
       it "should be able to submit marks"
+
+      it "knows if it was submitted"
+
+      it "knows when it was submitted"
       
     end
     
@@ -40,9 +61,9 @@ describe SectionTest do
 
   describe "times" do
 
-    it "should have an average time taken"
+    it "has an average time taken"
 
-    it "should have a median time taken"
+    it "has a median time taken"
     
   end
   

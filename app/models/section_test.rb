@@ -26,9 +26,10 @@ class SectionTest < ActiveRecord::Base
   attr_accessible :name, :description
   attr_accessible :start_time, :end_time, :time_submitted
 
-  validates :name,  :presence => true
-  validates :start_time, :presence => true
-  validates :end_time, :presence => true
+  validates :name,        :presence => true
+  validates :start_time,  :presence => true
+  validates :end_time,    :presence => true
+  validates :section,     :presence => true
 
   # The sum of the possible marks of all non bonus questions.
   def possible_marks
