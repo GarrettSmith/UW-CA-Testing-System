@@ -17,6 +17,7 @@
 # An abstract answer to a question.
 class Answer < ActiveRecord::Base
   belongs_to :student_test
+  belongs_to :question
 
   attr_accessible :earned_marks, :time_submitted, :time_taken
 
@@ -24,8 +25,11 @@ class Answer < ActiveRecord::Base
   validates :question,      :presence => true
 
   validates :earned_marks,  :numericality => 
-                              { :greater_than_or_equal_to => 0 },
+                            { :greater_than_or_equal_to => 0 },
                             :allow_nil => true
+
+  after_initialize :default_values
+
 
   # An answer has been submitted if the time it was submitted is not nil.
   def submitted? 
@@ -41,4 +45,11 @@ class Answer < ActiveRecord::Base
   def marked? 
     not @earned_marks.nil?
   end
+
+  private 
+
+    # Sets attributes to default values if nil
+    def default_values
+      self.time_taken = 0 if self.time_taken.nil?
+    end
 end
