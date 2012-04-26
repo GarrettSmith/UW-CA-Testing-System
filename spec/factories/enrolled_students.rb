@@ -2,5 +2,7 @@
 
 FactoryGirl.define do
   factory :enrolled_student do
+    student
+    section
   end
 end
