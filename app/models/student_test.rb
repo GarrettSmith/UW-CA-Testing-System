@@ -19,6 +19,9 @@ class StudentTest < ActiveRecord::Base
 
   attr_accessible :time_started, :time_submitted
 
+  validates :enrolled_student,  :presence => true
+  validates :section_test,      :presence => true
+
   # a shortcut to refer to the test's student
   def student
     enrolled_student.student

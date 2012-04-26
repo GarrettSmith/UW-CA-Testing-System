@@ -1,6 +1,18 @@
 require 'spec_helper'
 
 describe StudentTest do
+  it "has a valid factory" do
+    FactoryGirl.create(:student_test).should be_valid
+  end
+
+  it "belongs to an enrolled student" do 
+    FactoryGirl.build(:student_test, enrolled_student: nil).should_not be_valid
+  end
+
+  it "belongs to a section test" do
+    FactoryGirl.build(:student_test, section_test: nil).should_not be_valid
+  end
+
   describe "time" do
     it "has a time started"
 
@@ -21,10 +33,6 @@ describe StudentTest do
   end
 
   it "has many answers"
-
-  it "must belong to an enrolled student"
-
-  it "must belong to a section test"
 
   it "knows how many of its answers have been submitted"
 
