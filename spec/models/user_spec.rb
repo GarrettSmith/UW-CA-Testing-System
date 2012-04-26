@@ -79,7 +79,7 @@ describe User do
       FactoryGirl.build(:user, password: "pass").should_not be_valid
     end
 
-    it "shoudl be at most 128 characters long" do
+    it "should be at most 128 characters long" do
       FactoryGirl.build(:user, password: "x"*129).should_not be_valid
     end
 
