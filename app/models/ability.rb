@@ -7,6 +7,12 @@ class Ability
 
     # Global
     can :read, Course
+    can :read, Semester
+
+    # Manage own account
+    can :update_password, User, :user_id => user.id
+    can :update_email, User, :user_id => user.id
+    can :update_recieve_email, User, :user_id => user.id
 
     # Admins can do anything they want
     if user.admin?

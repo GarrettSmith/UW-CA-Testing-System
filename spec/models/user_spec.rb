@@ -1,4 +1,5 @@
 require 'spec_helper'
+require "cancan/matchers"
 
 describe User do
 
@@ -66,12 +67,17 @@ describe User do
       u.disable_email
       u.recieve_email?.should == false
     end
+
   end
 
   describe "password" do
     it "requires a password" do
       FactoryGirl.build(:user, password: nil).should_not be_valid
     end
+
+    it "requires a confirmation password"
+
+    it "should store the encrpyted password"
 
     it "should be at least 6 characters long" do 
       FactoryGirl.build(:user, password: "pass").should_not be_valid
@@ -80,19 +86,59 @@ describe User do
   end
 
   describe "role" do
-
     it "can be an admin" do
       FactoryGirl.create(:admin).admin?.should == true
     end
 
     it "can be a student" do
-      FactoryGirl.create(:student).student?.should == true
+      FactoryGirl.create(:student).user.student?.should == true
     end
 
     it "can be a professor" do
-      FactoryGirl.create(:professor).professor?.should == true
+      FactoryGirl.create(:professor).user.professor?.should == true
     end
 
+  end
+
+  describe "abilities" do
+    subject { ability }
+    let(:ability){ Ability.new(user) }
+
+    context "admin" do
+      let(:user){ FactoryGirl.create(:admin) }
+
+      it "can manage everything" do
+        should be_able_to(:manage, :all)
+      end
+
+    end
+
+    context "all" do
+      let(:user){ FactoryGirl.create(:user) }
+
+      it "can view courses" do
+        should be_able_to(:read, Course) 
+      end
+
+      it "can view semesters" do
+        should be_able_to(:read, Semester) 
+      end
+
+      describe "own account details" do
+        it "can change password" do
+          should be_able_to(:update_password, User, :user_id => user.id)
+        end
+
+        it "can change email" do
+          should be_able_to(:update_email, User, :user_id => user.id)
+        end
+
+        it "can change 'recieve email' setting" do
+          should be_able_to(:update_recieve_email, User, :user_id => user.id)
+        end
+      end
+    end
+    
   end
 
 end
