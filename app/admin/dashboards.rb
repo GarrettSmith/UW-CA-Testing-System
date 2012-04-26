@@ -35,4 +35,21 @@ ActiveAdmin::Dashboards.build do
   #
   # Will render the "Recent Users" then the "Recent Posts" sections on the dashboard.
 
+  section "Courses" do
+    ul do
+      Course.all.collect do |course|
+        li link_to(course.name, admin_course_path(course))
+      end
+    end
+  end
+
+
+  section "Users" do
+    ul do
+      User.all.collect do |user|
+        li link_to(user.full_name_reversed, admin_user_path(user))
+      end
+    end
+  end
+
 end
