@@ -20,6 +20,9 @@ class Answer < ActiveRecord::Base
 
   attr_accessible :earned_marks, :time_submitted, :time_taken
 
+  validates :student_test,  :presence => true
+  validates :question,      :presence => true
+
   validates :earned_marks,  :numericality => 
                               { :greater_than_or_equal_to => 0 },
                             :allow_nil => true
