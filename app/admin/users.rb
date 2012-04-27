@@ -12,6 +12,8 @@ ActiveAdmin.register User do
     column :first_name
     column :last_name
     column :email
+    column :student
+    column :professor
     default_actions
   end
 
@@ -21,6 +23,8 @@ ActiveAdmin.register User do
       row :last_name
       row :user_name
       row :email
+      row :student?
+      row :professor?
       row :created_at
       row :updated_at
     end
